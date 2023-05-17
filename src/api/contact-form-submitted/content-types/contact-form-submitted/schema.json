@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_form_submitteds",
+  "info": {
+    "singularName": "contact-form-submitted",
+    "pluralName": "contact-form-submitteds",
+    "displayName": "ContactFormSubmitted"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
