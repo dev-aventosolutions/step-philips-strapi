@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_news",
+  "info": {
+    "singularName": "about-us-new",
+    "pluralName": "about-us-news",
+    "displayName": "AboutUSNew",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "about_us_news_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::about-us-news-tag.about-us-news-tag",
+      "mappedBy": "about_us_news"
+    }
+  }
+}
