@@ -1,0 +1,150 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mainpages",
+  "info": {
+    "singularName": "mainpage",
+    "pluralName": "mainpages",
+    "displayName": "Mainpage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "heading_c1": {
+      "type": "string"
+    },
+    "heading_c2": {
+      "type": "string"
+    },
+    "desc_c2": {
+      "type": "string"
+    },
+    "image_c2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading_c3": {
+      "type": "string"
+    },
+    "desc_c3": {
+      "type": "string"
+    },
+    "image_c3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "yearstext_c4": {
+      "type": "string"
+    },
+    "propertiestext_c4": {
+      "type": "string"
+    },
+    "authtext_c4": {
+      "type": "string"
+    },
+    "peopletext_c4": {
+      "type": "string"
+    },
+    "yearsdesc_c4": {
+      "type": "string"
+    },
+    "propertiesdesc_c4": {
+      "type": "string"
+    },
+    "authdesc_c4": {
+      "type": "string"
+    },
+    "peopledesc_c4": {
+      "type": "string"
+    },
+    "image_c5": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "message_c5": {
+      "type": "string"
+    },
+    "title_c5": {
+      "type": "string"
+    },
+    "name_c5": {
+      "type": "string"
+    },
+    "heading_c6": {
+      "type": "string"
+    },
+    "desc_c6": {
+      "type": "string"
+    },
+    "imageoutline_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageoutline_c2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageoutline_c3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
