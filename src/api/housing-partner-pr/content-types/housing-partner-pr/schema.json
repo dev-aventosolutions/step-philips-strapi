@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "housing_partner_prs",
+  "info": {
+    "singularName": "housing-partner-pr",
+    "pluralName": "housing-partner-prs",
+    "displayName": "HousingPartnerPR"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "housing_partner_pr_blanckcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-pr-blanckcard.housing-partner-pr-blanckcard",
+      "mappedBy": "housing_partner_pr"
+    },
+    "housing_partner_pr_bgcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-pr-bgcard.housing-partner-pr-bgcard",
+      "mappedBy": "housing_partner_pr"
+    },
+    "housing_partner_pr_messageboxes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-pr-messagebox.housing-partner-pr-messagebox",
+      "mappedBy": "housing_partner_pr"
+    },
+    "housing_partner_pr_bluecardlasts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-pr-bluecardlast.housing-partner-pr-bluecardlast",
+      "mappedBy": "housing_partner_pr"
+    }
+  }
+}

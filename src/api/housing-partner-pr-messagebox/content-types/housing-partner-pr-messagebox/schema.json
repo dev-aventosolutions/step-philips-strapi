@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "housing_partner_pr_messageboxes",
+  "info": {
+    "singularName": "housing-partner-pr-messagebox",
+    "pluralName": "housing-partner-pr-messageboxes",
+    "displayName": "HousingPartnerPR-messagebox"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "housing_partner_pr": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::housing-partner-pr.housing-partner-pr",
+      "inversedBy": "housing_partner_pr_messageboxes"
+    }
+  }
+}
