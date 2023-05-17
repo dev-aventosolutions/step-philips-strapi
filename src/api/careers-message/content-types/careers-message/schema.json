@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers_messages",
+  "info": {
+    "singularName": "careers-message",
+    "pluralName": "careers-messages",
+    "displayName": "Careers-message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "message": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "career": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::career.career",
+      "inversedBy": "careers_message"
+    }
+  }
+}

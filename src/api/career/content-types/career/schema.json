@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "Career",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageoutline_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "careers_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::careers-card.careers-card",
+      "mappedBy": "career"
+    },
+    "careers_scrollboxes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::careers-scrollbox.careers-scrollbox",
+      "mappedBy": "career"
+    },
+    "careers_benefiticons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::careers-benefiticon.careers-benefiticon",
+      "mappedBy": "career"
+    },
+    "benefittitle": {
+      "type": "string"
+    },
+    "benefitdesc": {
+      "type": "text"
+    },
+    "careers_message": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::careers-message.careers-message",
+      "mappedBy": "career"
+    },
+    "careers_card_5": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::careers-card5.careers-card5",
+      "mappedBy": "career"
+    },
+    "careers_whatnexts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::careers-whatnext.careers-whatnext",
+      "mappedBy": "career"
+    }
+  }
+}

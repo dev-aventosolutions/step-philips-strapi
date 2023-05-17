@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers_card5s",
+  "info": {
+    "singularName": "careers-card5",
+    "pluralName": "careers-card5s",
+    "displayName": "Careers-card5",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "career": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::career.career",
+      "inversedBy": "careers_card_5"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

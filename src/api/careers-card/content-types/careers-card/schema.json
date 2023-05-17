@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers_cards",
+  "info": {
+    "singularName": "careers-card",
+    "pluralName": "careers-cards",
+    "displayName": "Careers-card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "career": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::career.career",
+      "inversedBy": "careers_cards"
+    }
+  }
+}
