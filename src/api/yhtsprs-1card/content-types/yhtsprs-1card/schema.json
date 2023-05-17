@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yhtsprs_1cards",
+  "info": {
+    "singularName": "yhtsprs-1card",
+    "pluralName": "yhtsprs-1cards",
+    "displayName": "YHTSPRS-1card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "yh_tenant_services_pr": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
+      "inversedBy": "yhtsprs_1_cards"
+    }
+  }
+}

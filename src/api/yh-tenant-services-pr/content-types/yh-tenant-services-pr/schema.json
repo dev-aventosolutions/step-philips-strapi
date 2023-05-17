@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yh_tenant_services_prs",
+  "info": {
+    "singularName": "yh-tenant-services-pr",
+    "pluralName": "yh-tenant-services-prs",
+    "displayName": "YHTenantServicesPR"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "yhtsprs_1_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhtsprs-1card.yhtsprs-1card",
+      "mappedBy": "yh_tenant_services_pr"
+    },
+    "yhtsprs_responsibilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhtsprs-responsibility.yhtsprs-responsibility",
+      "mappedBy": "yh_tenant_services_pr"
+    },
+    "yhtsprs_localcouncils": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhtsprs-localcouncil.yhtsprs-localcouncil",
+      "mappedBy": "yh_tenant_services_pr"
+    },
+    "yhtsprs_2_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhtsprs-2card.yhtsprs-2card",
+      "mappedBy": "yh_tenant_services_pr"
+    },
+    "yhtsprs_faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhtsprs-faq.yhtsprs-faq",
+      "mappedBy": "yh_tenant_services_pr"
+    },
+    "yhtsprs_lastcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhtsprs-lastcard.yhtsprs-lastcard",
+      "mappedBy": "yh_tenant_services_pr"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yhtsprs_localcouncils",
+  "info": {
+    "singularName": "yhtsprs-localcouncil",
+    "pluralName": "yhtsprs-localcouncils",
+    "displayName": "YHTSPRS-localcouncil"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "yh_tenant_services_pr": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
+      "inversedBy": "yhtsprs_localcouncils"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yhtsprs_faqs",
+  "info": {
+    "singularName": "yhtsprs-faq",
+    "pluralName": "yhtsprs-faqs",
+    "displayName": "YHTSPRS-faq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "yh_tenant_services_pr": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
+      "inversedBy": "yhtsprs_faqs"
+    }
+  }
+}

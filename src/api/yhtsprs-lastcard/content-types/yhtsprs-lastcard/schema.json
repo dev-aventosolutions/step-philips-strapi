@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yhtsprs_lastcards",
+  "info": {
+    "singularName": "yhtsprs-lastcard",
+    "pluralName": "yhtsprs-lastcards",
+    "displayName": "YHTSPRS-lastcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "yh_tenant_services_pr": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
+      "inversedBy": "yhtsprs_lastcards"
+    }
+  }
+}
