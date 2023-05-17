@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_comunities",
+  "info": {
+    "singularName": "contact-comunity",
+    "pluralName": "contact-comunities",
+    "displayName": "ContactComunity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contact_comunity_howcanwehelps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-comunity-howcanwehelp.contact-comunity-howcanwehelp",
+      "mappedBy": "contact_comunity"
+    },
+    "contact_comunity_to_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-comunity-to-report.contact-comunity-to-report",
+      "mappedBy": "contact_comunity"
+    }
+  }
+}

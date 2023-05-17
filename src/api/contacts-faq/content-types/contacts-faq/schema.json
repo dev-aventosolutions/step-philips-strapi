@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts_faqs",
+  "info": {
+    "singularName": "contacts-faq",
+    "pluralName": "contacts-faqs",
+    "displayName": "ContactsFAQ-howcanwehelp",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contact_faq": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-faq.contact-faq",
+      "inversedBy": "contacts_faqs"
+    }
+  }
+}

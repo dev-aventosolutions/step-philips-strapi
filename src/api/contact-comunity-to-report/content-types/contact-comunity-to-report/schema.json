@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_comunity_to_reports",
+  "info": {
+    "singularName": "contact-comunity-to-report",
+    "pluralName": "contact-comunity-to-reports",
+    "displayName": "ContactComunity-to-report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "contact_comunity": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-comunity.contact-comunity",
+      "inversedBy": "contact_comunity_to_reports"
+    }
+  }
+}

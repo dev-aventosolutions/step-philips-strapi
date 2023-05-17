@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_comunity_howcanwehelps",
+  "info": {
+    "singularName": "contact-comunity-howcanwehelp",
+    "pluralName": "contact-comunity-howcanwehelps",
+    "displayName": "ContactComunity-howcanwehelp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "string"
+    },
+    "contact_comunity": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-comunity.contact-comunity",
+      "inversedBy": "contact_comunity_howcanwehelps"
+    }
+  }
+}

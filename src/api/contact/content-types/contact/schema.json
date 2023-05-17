@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contact_howcanwehelps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-howcanwehelp.contact-howcanwehelp",
+      "mappedBy": "contact"
+    },
+    "contact_addresses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-address.contact-address",
+      "mappedBy": "contact"
+    },
+    "contact_to_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-to-report.contact-to-report",
+      "mappedBy": "contact"
+    }
+  }
+}

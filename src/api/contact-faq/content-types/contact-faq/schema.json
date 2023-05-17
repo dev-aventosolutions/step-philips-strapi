@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_faqs",
+  "info": {
+    "singularName": "contact-faq",
+    "pluralName": "contact-faqs",
+    "displayName": "ContactFAQ"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contacts_faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contacts-faq.contacts-faq",
+      "mappedBy": "contact_faq"
+    },
+    "contact_faq_to_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-faq-to-report.contact-faq-to-report",
+      "mappedBy": "contact_faq"
+    }
+  }
+}
