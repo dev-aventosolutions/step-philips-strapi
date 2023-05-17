@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_repair_maintenances",
+  "info": {
+    "singularName": "your-home-repair-maintenance",
+    "pluralName": "your-home-repair-maintenances",
+    "displayName": "YourHomeRepairMaintenance"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

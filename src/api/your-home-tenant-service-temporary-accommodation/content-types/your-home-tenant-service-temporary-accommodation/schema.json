@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_tenant_service_temporary_accommodations",
+  "info": {
+    "singularName": "your-home-tenant-service-temporary-accommodation",
+    "pluralName": "your-home-tenant-service-temporary-accommodations",
+    "displayName": "YourHomeTenantServiceTemporaryAccommodation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "yhts_temporary_accommodation_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhts-temporary-accommodation-card.yhts-temporary-accommodation-card",
+      "mappedBy": "your_home_tenant_service_temporary_accommodation"
+    },
+    "yhts_temporary_accommodation_resps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhts-temporary-accommodation-resp.yhts-temporary-accommodation-resp",
+      "mappedBy": "your_home_tenant_service_temporary_accommodation"
+    },
+    "yhts_temporary_accommodation_localcouncils": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhts-temporary-accommodation-localcouncil.yhts-temporary-accommodation-localcouncil",
+      "mappedBy": "your_home_tenant_service_temporary_accommodation"
+    },
+    "yhts_temporary_accommodation_faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhts-temporary-accommodation-faq.yhts-temporary-accommodation-faq",
+      "mappedBy": "your_home_tenant_service_temporary_accommodation"
+    },
+    "yhts_temporary_accommodation_lastcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhts-temporary-accommodation-lastcard.yhts-temporary-accommodation-lastcard",
+      "mappedBy": "your_home_tenant_service_temporary_accommodation"
+    }
+  }
+}
