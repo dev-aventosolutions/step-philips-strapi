@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "downloads",
+  "info": {
+    "singularName": "download",
+    "pluralName": "downloads",
+    "displayName": "Download"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "download_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::download-card.download-card",
+      "mappedBy": "download"
+    }
+  }
+}

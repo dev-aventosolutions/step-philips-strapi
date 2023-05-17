@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glossaries",
+  "info": {
+    "singularName": "glossary",
+    "pluralName": "glossaries",
+    "displayName": "Glossary"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "glossary_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::glossary-card.glossary-card",
+      "mappedBy": "glossary"
+    }
+  }
+}
