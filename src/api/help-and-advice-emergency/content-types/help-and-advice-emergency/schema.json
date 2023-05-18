@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "help_and_advice_emergencies",
+  "info": {
+    "singularName": "help-and-advice-emergency",
+    "pluralName": "help-and-advice-emergencies",
+    "displayName": "HelpAndAdvice-emergency"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "number": {
+      "type": "string"
+    },
+    "help_and_advice": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::help-and-advice.help-and-advice",
+      "inversedBy": "help_and_advice_emergency"
+    }
+  }
+}
