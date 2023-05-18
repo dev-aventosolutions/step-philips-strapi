@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts_press_medias",
+  "info": {
+    "singularName": "contacts-press-media",
+    "pluralName": "contacts-press-medias",
+    "displayName": "ContactsPressMedia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

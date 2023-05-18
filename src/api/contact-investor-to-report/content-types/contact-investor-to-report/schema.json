@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_investor_to_reports",
+  "info": {
+    "singularName": "contact-investor-to-report",
+    "pluralName": "contact-investor-to-reports",
+    "displayName": "ContactInvestor-to-report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contact_investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-investor.contact-investor",
+      "inversedBy": "contact_investor_to_reports"
+    }
+  }
+}

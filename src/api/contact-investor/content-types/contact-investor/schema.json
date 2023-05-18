@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_investors",
+  "info": {
+    "singularName": "contact-investor",
+    "pluralName": "contact-investors",
+    "displayName": "ContactInvestor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contact_investor_to_call": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-investor-to-call.contact-investor-to-call",
+      "mappedBy": "contact_investor"
+    },
+    "contact_investor_to_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-investor-to-report.contact-investor-to-report",
+      "mappedBy": "contact_investor"
+    }
+  }
+}

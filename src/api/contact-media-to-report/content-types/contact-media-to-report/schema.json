@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_media_to_reports",
+  "info": {
+    "singularName": "contact-media-to-report",
+    "pluralName": "contact-media-to-reports",
+    "displayName": "ContactMedia-to-report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "contact_media": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-media.contact-media",
+      "inversedBy": "contact_media_to_reports"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_investor_to_calls",
+  "info": {
+    "singularName": "contact-investor-to-call",
+    "pluralName": "contact-investor-to-calls",
+    "displayName": "ContactInvestor-to-call"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contact_investor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-investor.contact-investor",
+      "inversedBy": "contact_investor_to_call"
+    }
+  }
+}

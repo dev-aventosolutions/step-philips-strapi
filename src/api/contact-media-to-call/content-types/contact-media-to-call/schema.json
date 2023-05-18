@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_media_to_calls",
+  "info": {
+    "singularName": "contact-media-to-call",
+    "pluralName": "contact-media-to-calls",
+    "displayName": "ContactMedia-to-call"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "number": {
+      "type": "string"
+    },
+    "contact_media": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-media.contact-media",
+      "inversedBy": "contact_media_to_calls"
+    }
+  }
+}

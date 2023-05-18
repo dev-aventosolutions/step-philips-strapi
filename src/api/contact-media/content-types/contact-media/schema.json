@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_medias",
+  "info": {
+    "singularName": "contact-media",
+    "pluralName": "contact-medias",
+    "displayName": "ContactMedia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "contact_media_to_calls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-media-to-call.contact-media-to-call",
+      "mappedBy": "contact_media"
+    },
+    "contact_media_to_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-media-to-report.contact-media-to-report",
+      "mappedBy": "contact_media"
+    }
+  }
+}
