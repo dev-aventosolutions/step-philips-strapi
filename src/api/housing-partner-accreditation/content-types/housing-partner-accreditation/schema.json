@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "housing_partner_accreditations",
+  "info": {
+    "singularName": "housing-partner-accreditation",
+    "pluralName": "housing-partner-accreditations",
+    "displayName": "HousingPartner-accreditation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "housing_partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::housing-partner.housing-partner",
+      "inversedBy": "housing_partner_accreditations"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "housing_partners",
+  "info": {
+    "singularName": "housing-partner",
+    "pluralName": "housing-partners",
+    "displayName": "HousingPartner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageoutline_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "housing_partner_topcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-topcard.housing-partner-topcard",
+      "mappedBy": "housing_partner"
+    },
+    "housing_partner_bottomcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-bottomcard.housing-partner-bottomcard",
+      "mappedBy": "housing_partner"
+    },
+    "housing_partner_bluecards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-bluecard.housing-partner-bluecard",
+      "mappedBy": "housing_partner"
+    },
+    "housing_partner_bluecardlasts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-bluecardlast.housing-partner-bluecardlast",
+      "mappedBy": "housing_partner"
+    },
+    "housing_partner_accreditations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-accreditation.housing-partner-accreditation",
+      "mappedBy": "housing_partner"
+    },
+    "messagetitle": {
+      "type": "string"
+    },
+    "messagedesc": {
+      "type": "text"
+    },
+    "messagename": {
+      "type": "string"
+    }
+  }
+}

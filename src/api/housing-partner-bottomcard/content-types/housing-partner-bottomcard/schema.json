@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "housing_partner_bottomcards",
+  "info": {
+    "singularName": "housing-partner-bottomcard",
+    "pluralName": "housing-partner-bottomcards",
+    "displayName": "HousingPartner-2card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "housing_partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::housing-partner.housing-partner",
+      "inversedBy": "housing_partner_bottomcards"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "housing_partner_bluecards",
+  "info": {
+    "singularName": "housing-partner-bluecard",
+    "pluralName": "housing-partner-bluecards",
+    "displayName": "HousingPartner-bluecard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "housing_partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::housing-partner.housing-partner",
+      "inversedBy": "housing_partner_bluecards"
+    }
+  }
+}
