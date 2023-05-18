@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investors_landlord_bg_c3s",
+  "info": {
+    "singularName": "investors-landlord-bg-c3",
+    "pluralName": "investors-landlord-bg-c3s",
+    "displayName": "InvestorsLandlord_bg_c3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "investors_landlord": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::investors-landlord.investors-landlord",
+      "inversedBy": "investors_landlord_bg_c_3"
+    }
+  }
+}

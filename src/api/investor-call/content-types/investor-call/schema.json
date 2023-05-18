@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investor_calls",
+  "info": {
+    "singularName": "investor-call",
+    "pluralName": "investor-calls",
+    "displayName": "Investor-call",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::investor.investor",
+      "inversedBy": "investor_calls"
+    },
+    "number": {
+      "type": "string"
+    }
+  }
+}

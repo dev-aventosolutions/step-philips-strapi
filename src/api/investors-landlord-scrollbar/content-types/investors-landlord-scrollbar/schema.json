@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investors_landlord_scrollbars",
+  "info": {
+    "singularName": "investors-landlord-scrollbar",
+    "pluralName": "investors-landlord-scrollbars",
+    "displayName": "InvestorsLandlord_scrollbox",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "investors_landlord": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::investors-landlord.investors-landlord",
+      "inversedBy": "investors_landlord_scrollbars"
+    }
+  }
+}

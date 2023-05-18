@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investor_icons_c3s",
+  "info": {
+    "singularName": "investor-icons-c3",
+    "pluralName": "investor-icons-c3s",
+    "displayName": "Investor_icons_c3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::investor.investor",
+      "inversedBy": "investor_icons_c_3s"
+    }
+  }
+}

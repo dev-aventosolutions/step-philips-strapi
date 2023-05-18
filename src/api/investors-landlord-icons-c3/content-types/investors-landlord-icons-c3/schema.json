@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investors_landlord_icons_c3s",
+  "info": {
+    "singularName": "investors-landlord-icons-c3",
+    "pluralName": "investors-landlord-icons-c3s",
+    "displayName": "InvestorsLandlord_icons_c3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "investors_landlord": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::investors-landlord.investors-landlord",
+      "inversedBy": "investors_landlord_icons_c_3s"
+    }
+  }
+}

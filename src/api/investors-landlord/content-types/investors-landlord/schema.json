@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investors_landlords",
+  "info": {
+    "singularName": "investors-landlord",
+    "pluralName": "investors-landlords",
+    "displayName": "investorsLandlord"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "investors_landlord_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::investors-landlord-card.investors-landlord-card",
+      "mappedBy": "investors_landlord"
+    },
+    "investors_landlord_bg_c_3": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::investors-landlord-bg-c3.investors-landlord-bg-c3",
+      "mappedBy": "investors_landlord"
+    },
+    "investors_landlord_icons_c_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::investors-landlord-icons-c3.investors-landlord-icons-c3",
+      "mappedBy": "investors_landlord"
+    },
+    "investors_landlord_scrollbars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::investors-landlord-scrollbar.investors-landlord-scrollbar",
+      "mappedBy": "investors_landlord"
+    },
+    "investors_landlord_message": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::investors-landlord-message.investors-landlord-message",
+      "mappedBy": "investors_landlord"
+    },
+    "investors_landlord_faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::investors-landlord-faq.investors-landlord-faq",
+      "mappedBy": "investors_landlord"
+    },
+    "investors_landlord_call": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::investors-landlord-call.investors-landlord-call",
+      "mappedBy": "investors_landlord"
+    }
+  }
+}

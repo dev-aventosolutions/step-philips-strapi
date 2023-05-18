@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investor_bg_c3s",
+  "info": {
+    "singularName": "investor-bg-c3",
+    "pluralName": "investor-bg-c3s",
+    "displayName": "Investor_bg_c3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bg_image_c3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "investor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::investor.investor",
+      "inversedBy": "investor_bg_c_3"
+    }
+  }
+}

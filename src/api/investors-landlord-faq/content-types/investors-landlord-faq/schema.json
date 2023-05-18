@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investors_landlord_faqs",
+  "info": {
+    "singularName": "investors-landlord-faq",
+    "pluralName": "investors-landlord-faqs",
+    "displayName": "InvestorsLandlord-faq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "investors_landlord": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::investors-landlord.investors-landlord",
+      "inversedBy": "investors_landlord_faqs"
+    }
+  }
+}

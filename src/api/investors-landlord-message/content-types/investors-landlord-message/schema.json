@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investors_landlord_messages",
+  "info": {
+    "singularName": "investors-landlord-message",
+    "pluralName": "investors-landlord-messages",
+    "displayName": "InvestorsLandlord-message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "investors_landlord": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::investors-landlord.investors-landlord",
+      "inversedBy": "investors_landlord_message"
+    }
+  }
+}
