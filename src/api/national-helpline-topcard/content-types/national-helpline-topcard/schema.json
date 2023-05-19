@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "national_helpline_topcards",
+  "info": {
+    "singularName": "national-helpline-topcard",
+    "pluralName": "national-helpline-topcards",
+    "displayName": "NationalHelpline-topcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "national_helpline": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::national-helpline.national-helpline",
+      "inversedBy": "national_helpline_topcards"
+    }
+  }
+}

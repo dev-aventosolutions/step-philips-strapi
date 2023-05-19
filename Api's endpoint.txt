@@ -1,0 +1,45 @@
+Home : /api/mainpages?populate=*
+AboutUs: /api/about-uses?populate=*
+AboutUsComunity : /api/about-us-comunities?populate=*
+AbouUsMeetTheTeam : /api/about-us-meet-the-teams?populate=*
+AbouUsMeetTheTeam-MessageBox : /api/about-us-meet-the-team-message-boxes?populate=*
+AboutUsNews : /api/about-us-news?populate=*
+NewsArticle : /api/news-articles?populate=*
+YourHome : /api/your-homes?populate=*
+YourHomeRepairMaintenance : /api/your-home-repair-maintenances?populate=*
+YourHomeOutOfHourEmergency : /api/your-home-out-of-hour-emergencies?populate=*
+YourHomeTenantService : /api/your-home-tenant-services?populate=*
+YourHomeTenantServiceTemporaryAccommodation : /api/your-home-tenant-service-temporary-accommodations?populate=*
+YourHomeTenantServicePRS : /api/yh-tenant-services-prs?populate=*
+YourHomeMeetYourTeam : /api/your-home-meet-your-teams?populate=*
+HelpAndAdvice : /api/help-and-advice-emergencies?populate=deep,4
+HelpAndAdviceNationalHelplines : /api/help-and-advice-national-helplines?populate=*
+HousingPartner : /api/housing-partners?populate=*
+HousingPartnerTemporaryAccommodition : /api/housing-partner-temporary-accommodations?populate=*
+HousingPartnerPRS : /api/housing-partner-prs?populate=*
+HousingPartnerAccommodationTypes : /api/housing-partner-accommoditions?populate=*
+HousingPartnerOurProject : /api/housing-partner-our-projects?populate=*
+HousingPartnerProjectTemplate : /api/housing-partner-project-templates?populate=*
+HousingPartnerWhereWeOperate : /api/housing-partner-where-we-operates?populate=*
+Investors : /api/investors?populate=*
+InvestorsCorporateInvestor : /api/investors-corporate-investors?populate=*
+investorsPrivateInvestors : /api/invester-private-investers?populate=*
+investerLandlord : /api/investors-landlords?populate=*
+Careers : /api/careers?populate=*
+Contact : /api/contacts?populate=*
+ContactFAQs : /api/contact-faqs?populate=*
+ContactPressMedia : /api/contacts-press-medias?populate=*
+ContactComunity : /api/contact-comunities?populate=*
+ContactHousingPartner : /api/contact-housing-partners?populate=*
+ContactInvestor : /api/contact-investors?populate=*
+ContactMedia : /api/contact-medias?populate=*
+ContactGenerals : /api/contact-generals?populate=*
+ContactLettingViolations : /api/contact-letting-violations?populate=*
+ContactFormsubmitted : /api/contact-form-submitteds?populate=*
+Downloads : /api/downloads?populate=*
+Glossary : /api/glossaries?populate=*
+PrivacyPolicy : /api/privacy-policies?populate=*
+
+    "@strapi/plugin-i18n": "^4.10.2",
+    "@strapi/plugin-users-permissions": "4.9.0",
+ 

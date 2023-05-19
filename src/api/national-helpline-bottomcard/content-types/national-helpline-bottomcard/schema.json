@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "national_helpline_bottomcards",
+  "info": {
+    "singularName": "national-helpline-bottomcard",
+    "pluralName": "national-helpline-bottomcards",
+    "displayName": "NationalHelpline-Bottomcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "linkURL": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "national_helpline": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::national-helpline.national-helpline",
+      "inversedBy": "national_helpline_bottomcards"
+    }
+  }
+}

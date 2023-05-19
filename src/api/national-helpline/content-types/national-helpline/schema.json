@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "national_helplines",
+  "info": {
+    "singularName": "national-helpline",
+    "pluralName": "national-helplines",
+    "displayName": "NationalHelpline"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "emergency_title": {
+      "type": "string"
+    },
+    "emergency_desc": {
+      "type": "text"
+    },
+    "national_helpline_topcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::national-helpline-topcard.national-helpline-topcard",
+      "mappedBy": "national_helpline"
+    },
+    "national_helpline_bottomcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::national-helpline-bottomcard.national-helpline-bottomcard",
+      "mappedBy": "national_helpline"
+    }
+  }
+}
