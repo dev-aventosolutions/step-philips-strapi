@@ -46,12 +46,6 @@
       "target": "api::housing-partner-topcard.housing-partner-topcard",
       "mappedBy": "housing_partner"
     },
-    "housing_partner_bottomcards": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::housing-partner-bottomcard.housing-partner-bottomcard",
-      "mappedBy": "housing_partner"
-    },
     "housing_partner_bluecards": {
       "type": "relation",
       "relation": "oneToMany",
@@ -78,6 +72,18 @@
     },
     "messagename": {
       "type": "string"
+    },
+    "housing_partner_cardbottoms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-cardbottom.housing-partner-cardbottom",
+      "mappedBy": "housing_partner"
+    },
+    "housing_partner_2_crads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-2crad.housing-partner-2crad",
+      "mappedBy": "housing_partner"
     }
   }
 }

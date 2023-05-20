@@ -13,8 +13,8 @@ YourHomeTenantServiceTemporaryAccommodation : /api/your-home-tenant-service-temp
 YourHomeTenantServicePRS : /api/yh-tenant-services-prs?populate=*
 YourHomeMeetYourTeam : /api/your-home-meet-your-teams?populate=*
 HelpAndAdvice : /api/help-and-advice-emergencies?populate=deep,4
-HelpAndAdviceNationalHelplines : /api/help-and-advice-national-helplines?populate=*
-HousingPartner : /api/housing-partners?populate=*
+HelpAndAdviceNationalHelplines : https://stef-philips-strapi.onrender.com/api/national-helplines?populate=deep,3
+HousingPartner : /api/housing-partners?populate=deep,3
 HousingPartnerTemporaryAccommodition : /api/housing-partner-temporary-accommodations?populate=*
 HousingPartnerPRS : /api/housing-partner-prs?populate=*
 HousingPartnerAccommodationTypes : /api/housing-partner-accommoditions?populate=*
