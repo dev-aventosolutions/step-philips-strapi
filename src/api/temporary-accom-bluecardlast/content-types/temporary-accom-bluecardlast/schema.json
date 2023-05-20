@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temporary_accom_bluecardlasts",
+  "info": {
+    "singularName": "temporary-accom-bluecardlast",
+    "pluralName": "temporary-accom-bluecardlasts",
+    "displayName": "TemporaryAccom-bluecardlast"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "temporary_accom": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::temporary-accom.temporary-accom",
+      "inversedBy": "temporary_accom_bluecardlasts"
+    }
+  }
+}

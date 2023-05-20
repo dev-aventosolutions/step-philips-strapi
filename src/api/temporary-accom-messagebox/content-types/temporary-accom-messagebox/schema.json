@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temporary_accom_messageboxes",
+  "info": {
+    "singularName": "temporary-accom-messagebox",
+    "pluralName": "temporary-accom-messageboxes",
+    "displayName": "TemporaryAccom-messagebox"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "temporary_accom": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::temporary-accom.temporary-accom",
+      "inversedBy": "temporary_accom_messageboxes"
+    }
+  }
+}

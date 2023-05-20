@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temporary_accoms",
+  "info": {
+    "singularName": "temporary-accom",
+    "pluralName": "temporary-accoms",
+    "displayName": "TemporaryAccom"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "temporary_accom_blankcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::temporary-accom-blankcard.temporary-accom-blankcard",
+      "mappedBy": "temporary_accom"
+    },
+    "temporary_accom_messageboxes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::temporary-accom-messagebox.temporary-accom-messagebox",
+      "mappedBy": "temporary_accom"
+    },
+    "temporary_accom_bgcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::temporary-accom-bgcard.temporary-accom-bgcard",
+      "mappedBy": "temporary_accom"
+    },
+    "temporary_accom_bluecardlasts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::temporary-accom-bluecardlast.temporary-accom-bluecardlast",
+      "mappedBy": "temporary_accom"
+    }
+  }
+}
