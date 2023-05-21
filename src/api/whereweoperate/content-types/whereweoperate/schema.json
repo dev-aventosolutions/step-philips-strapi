@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whereweoperates",
+  "info": {
+    "singularName": "whereweoperate",
+    "pluralName": "whereweoperates",
+    "displayName": "whereweoperate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "titlecard": {
+      "type": "string"
+    },
+    "desc1card": {
+      "type": "string"
+    },
+    "imagecard": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imagecardoutline": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "whereweoperate_smallcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::whereweoperate-smallcard.whereweoperate-smallcard",
+      "mappedBy": "whereweoperate"
+    },
+    "whereweoperate_lastblues": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::whereweoperate-lastblue.whereweoperate-lastblue",
+      "mappedBy": "whereweoperate"
+    }
+  }
+}

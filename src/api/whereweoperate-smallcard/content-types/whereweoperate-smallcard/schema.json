@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whereweoperate_smallcards",
+  "info": {
+    "singularName": "whereweoperate-smallcard",
+    "pluralName": "whereweoperate-smallcards",
+    "displayName": "Whereweoperate-smallcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "whereweoperate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::whereweoperate.whereweoperate",
+      "inversedBy": "whereweoperate_smallcards"
+    }
+  }
+}
