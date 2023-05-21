@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hp_accommodation_types",
+  "info": {
+    "singularName": "hp-accommodation-type",
+    "pluralName": "hp-accommodation-types",
+    "displayName": "HPAccommodationType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hp_accommodation_type_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hp-accommodation-type-card.hp-accommodation-type-card",
+      "mappedBy": "hp_accommodation_type"
+    },
+    "hp_accommodation_type_lastblues": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hp-accommodation-type-lastblue.hp-accommodation-type-lastblue",
+      "mappedBy": "hp_accommodation_type"
+    }
+  }
+}

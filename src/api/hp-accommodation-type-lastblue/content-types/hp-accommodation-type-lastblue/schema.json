@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hp_accommodation_type_lastblues",
+  "info": {
+    "singularName": "hp-accommodation-type-lastblue",
+    "pluralName": "hp-accommodation-type-lastblues",
+    "displayName": "HPAccommodationType-lastblue"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hp_accommodation_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hp-accommodation-type.hp-accommodation-type",
+      "inversedBy": "hp_accommodation_type_lastblues"
+    }
+  }
+}
