@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ourproject_bottomcards",
+  "info": {
+    "singularName": "ourproject-bottomcard",
+    "pluralName": "ourproject-bottomcards",
+    "displayName": "Ourproject-bottomcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ourproject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ourproject.ourproject",
+      "inversedBy": "ourproject_bottomcards"
+    }
+  }
+}
