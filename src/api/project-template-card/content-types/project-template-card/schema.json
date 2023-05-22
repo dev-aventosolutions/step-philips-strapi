@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_template_cards",
+  "info": {
+    "singularName": "project-template-card",
+    "pluralName": "project-template-cards",
+    "displayName": "ProjectTemplate-card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "project_template": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project-template.project-template",
+      "inversedBy": "project_template_cards"
+    }
+  }
+}

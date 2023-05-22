@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_templates",
+  "info": {
+    "singularName": "project-template",
+    "pluralName": "project-templates",
+    "displayName": "ProjectTemplate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "desc1": {
+      "type": "string"
+    },
+    "desc2": {
+      "type": "string"
+    },
+    "desc_main": {
+      "type": "text"
+    },
+    "image_crousal": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "title_messagebox": {
+      "type": "string"
+    },
+    "name_messagebox": {
+      "type": "string"
+    },
+    "description_messagebox": {
+      "type": "text"
+    },
+    "project_template_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-template-card.project-template-card",
+      "mappedBy": "project_template"
+    },
+    "project_template_bluecardlasts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-template-bluecardlast.project-template-bluecardlast",
+      "mappedBy": "project_template"
+    }
+  }
+}

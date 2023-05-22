@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_template_bluecardlasts",
+  "info": {
+    "singularName": "project-template-bluecardlast",
+    "pluralName": "project-template-bluecardlasts",
+    "displayName": "ProjectTemplate-bluecardlast"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "project_template": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project-template.project-template",
+      "inversedBy": "project_template_bluecardlasts"
+    }
+  }
+}
