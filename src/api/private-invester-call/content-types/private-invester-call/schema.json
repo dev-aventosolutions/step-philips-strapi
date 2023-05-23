@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "private_invester_calls",
+  "info": {
+    "singularName": "private-invester-call",
+    "pluralName": "private-invester-calls",
+    "displayName": "PrivateInvester-call"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "private_invester": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::private-invester.private-invester",
+      "inversedBy": "private_invester_calls"
+    }
+  }
+}

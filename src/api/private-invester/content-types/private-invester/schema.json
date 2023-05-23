@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "private_investers",
+  "info": {
+    "singularName": "private-invester",
+    "pluralName": "private-investers",
+    "displayName": "PrivateInvester"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "sourcing_desc": {
+      "type": "text"
+    },
+    "investment_desc": {
+      "type": "text"
+    },
+    "private_invester_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-card.private-invester-card",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_bgc_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-bgc3.private-invester-bgc3",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_iconc_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-iconc3.private-invester-iconc3",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_scrollbox_1s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-scrollbox1.private-invester-scrollbox1",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_scrollbox_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-scrollbox2.private-invester-scrollbox2",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-message.private-invester-message",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_scrollbox_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-scrollbox3.private-invester-scrollbox3",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_bgc_6s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-bgc6.private-invester-bgc6",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-faq.private-invester-faq",
+      "mappedBy": "private_invester"
+    },
+    "private_invester_calls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::private-invester-call.private-invester-call",
+      "mappedBy": "private_invester"
+    }
+  }
+}

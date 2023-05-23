@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "private_invester_faqs",
+  "info": {
+    "singularName": "private-invester-faq",
+    "pluralName": "private-invester-faqs",
+    "displayName": "PrivateInvester-faq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "private_invester": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::private-invester.private-invester",
+      "inversedBy": "private_invester_faqs"
+    }
+  }
+}

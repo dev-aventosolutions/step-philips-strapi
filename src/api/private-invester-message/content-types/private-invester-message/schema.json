@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "private_invester_messages",
+  "info": {
+    "singularName": "private-invester-message",
+    "pluralName": "private-invester-messages",
+    "displayName": "PrivateInvester-message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "private_invester": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::private-invester.private-invester",
+      "inversedBy": "private_invester_messages"
+    }
+  }
+}
