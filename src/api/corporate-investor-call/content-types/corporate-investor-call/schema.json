@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporate_investor_calls",
+  "info": {
+    "singularName": "corporate-investor-call",
+    "pluralName": "corporate-investor-calls",
+    "displayName": "CorporateInvestor-call"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "corporate_investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::corporate-investor.corporate-investor",
+      "inversedBy": "corporate_investor_calls"
+    }
+  }
+}

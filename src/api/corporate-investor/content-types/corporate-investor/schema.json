@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporate_investors",
+  "info": {
+    "singularName": "corporate-investor",
+    "pluralName": "corporate-investors",
+    "displayName": "CorporateInvestor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "investment_desc": {
+      "type": "text"
+    },
+    "sourcing_desc": {
+      "type": "text"
+    },
+    "corporate_investor_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-card.corporate-investor-card",
+      "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_bgc_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-bgc3.corporate-investor-bgc3",
+      "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_scrollbox_1s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-scrollbox1.corporate-investor-scrollbox1",
+      "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_scrollbox_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-scrollbox2.corporate-investor-scrollbox2",
+      "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_calls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-call.corporate-investor-call",
+      "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-message.corporate-investor-message",
+      "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-faq.corporate-investor-faq",
+      "mappedBy": "corporate_investor"
+    }
+  }
+}

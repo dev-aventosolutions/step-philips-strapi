@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporate_investor_faqs",
+  "info": {
+    "singularName": "corporate-investor-faq",
+    "pluralName": "corporate-investor-faqs",
+    "displayName": "CorporateInvestor-faq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "corporate_investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::corporate-investor.corporate-investor",
+      "inversedBy": "corporate_investor_faqs"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporate_investor_bgc3s",
+  "info": {
+    "singularName": "corporate-investor-bgc3",
+    "pluralName": "corporate-investor-bgc3s",
+    "displayName": "CorporateInvestor-bgc3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "corporate_investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::corporate-investor.corporate-investor",
+      "inversedBy": "corporate_investor_bgc_3s"
+    }
+  }
+}
