@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "c_housing_partner_calls",
+  "info": {
+    "singularName": "c-housing-partner-call",
+    "pluralName": "c-housing-partner-calls",
+    "displayName": "CHousingPartner-call"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "call": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "c_housing_partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::c-housing-partner.c-housing-partner",
+      "inversedBy": "c_housing_partner_calls"
+    }
+  }
+}

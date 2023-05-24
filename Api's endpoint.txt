@@ -25,11 +25,11 @@ Investors : https://stef-philips-strapi.onrender.com/api/investors?populate=deep
 InvestorsCorporateInvestor : /api/corporate-investors?populate=deep,3
 investorsPrivateInvestors : /api/private-investers?populate=deep,3
 investerLandlord : /api/investors-landlords?populate=deep,3
-Careers : /api/careers?populate=*
-Contact : /api/contacts?populate=*
-ContactFAQs : /api/contact-faqs?populate=*
-ContactPressMedia : /api/contacts-press-medias?populate=*
-ContactComunity : /api/contact-comunities?populate=*
+Careers : /api/careers?populate=deep,3
+Contact : /api/contacts?populate=deep,3
+ContactFAQs : /api/contact-faqs?populate=deep,3
+ContactPressMedia : /api/contacts-press-medias?populate=deep,2
+ContactComunity : /api/contact-comunities?populate=deep,2
 ContactHousingPartner : /api/contact-housing-partners?populate=*
 ContactInvestor : /api/contact-investors?populate=*
 ContactMedia : /api/contact-medias?populate=*
@@ -40,6 +40,4 @@ Downloads : /api/downloads?populate=*
 Glossary : /api/glossaries?populate=*
 PrivacyPolicy : /api/privacy-policies?populate=*
 
-    "@strapi/plugin-i18n": "^4.10.2",
-    "@strapi/plugin-users-permissions": "4.9.0",
  

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "c_housing_partner_reports",
+  "info": {
+    "singularName": "c-housing-partner-report",
+    "pluralName": "c-housing-partner-reports",
+    "displayName": "CHousingPartner-report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "c_housing_partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::c-housing-partner.c-housing-partner",
+      "inversedBy": "c_housing_partner_reports"
+    }
+  }
+}
