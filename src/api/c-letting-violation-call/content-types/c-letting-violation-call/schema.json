@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "c_letting_violation_calls",
+  "info": {
+    "singularName": "c-letting-violation-call",
+    "pluralName": "c-letting-violation-calls",
+    "displayName": "CLettingViolation-call"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "call": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "c_letting_violation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::c-letting-violation.c-letting-violation",
+      "inversedBy": "c_letting_violation_calls"
+    }
+  }
+}

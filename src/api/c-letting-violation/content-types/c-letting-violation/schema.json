@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "c_letting_violations",
+  "info": {
+    "singularName": "c-letting-violation",
+    "pluralName": "c-letting-violations",
+    "displayName": "CLettingViolation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "c_letting_violation_calls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::c-letting-violation-call.c-letting-violation-call",
+      "mappedBy": "c_letting_violation"
+    },
+    "c_letting_violation_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::c-letting-violation-report.c-letting-violation-report",
+      "mappedBy": "c_letting_violation"
+    }
+  }
+}
