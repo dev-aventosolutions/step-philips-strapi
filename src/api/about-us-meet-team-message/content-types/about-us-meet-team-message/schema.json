@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_meet_team_messages",
+  "info": {
+    "singularName": "about-us-meet-team-message",
+    "pluralName": "about-us-meet-team-messages",
+    "displayName": "AboutUsMeetTeam-message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "about_us_meet_team": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about-us-meet-team.about-us-meet-team",
+      "inversedBy": "about_us_meet_team_messages"
+    }
+  }
+}

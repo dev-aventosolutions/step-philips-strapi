@@ -1,0 +1,113 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "AboutUs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "unique_approach_title": {
+      "type": "string"
+    },
+    "unique_approach_desc": {
+      "type": "string"
+    },
+    "unique_approach_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "desc1_c2": {
+      "type": "string"
+    },
+    "desc2_c2": {
+      "type": "string"
+    },
+    "desc3_c2": {
+      "type": "string"
+    },
+    "desc4_c2": {
+      "type": "string"
+    },
+    "image_c2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "about_us_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-card.about-us-card",
+      "mappedBy": "about_us"
+    },
+    "about_us_values": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-value.about-us-value",
+      "mappedBy": "about_us"
+    },
+    "about_us_teams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-team.about-us-team",
+      "mappedBy": "about_us"
+    },
+    "about_us_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-message.about-us-message",
+      "mappedBy": "about_us"
+    }
+  }
+}

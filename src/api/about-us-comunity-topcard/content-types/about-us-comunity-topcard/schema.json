@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_comunity_topcards",
+  "info": {
+    "singularName": "about-us-comunity-topcard",
+    "pluralName": "about-us-comunity-topcards",
+    "displayName": "AboutUsComunity-topcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "about_us_comunity": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about-us-comunity.about-us-comunity",
+      "inversedBy": "about_us_comunity_topcards"
+    }
+  }
+}

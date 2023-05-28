@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_news",
+  "info": {
+    "singularName": "about-us-new",
+    "pluralName": "about-us-news",
+    "displayName": "AboutUSNew"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "about_us_new_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-new-card.about-us-new-card",
+      "mappedBy": "about_us_new"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_meet_teams",
+  "info": {
+    "singularName": "about-us-meet-team",
+    "pluralName": "about-us-meet-teams",
+    "displayName": "AboutUsMeetTeam"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "about_us_meet_team_teams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-meet-team-team.about-us-meet-team-team",
+      "mappedBy": "about_us_meet_team"
+    },
+    "about_us_meet_team_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-meet-team-message.about-us-meet-team-message",
+      "mappedBy": "about_us_meet_team"
+    }
+  }
+}

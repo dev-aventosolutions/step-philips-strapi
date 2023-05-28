@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_comunities",
+  "info": {
+    "singularName": "about-us-comunity",
+    "pluralName": "about-us-comunities",
+    "displayName": "AboutUsComunity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "title_c1": {
+      "type": "string"
+    },
+    "date_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "messageboxname": {
+      "type": "string"
+    },
+    "messageboxtitle": {
+      "type": "string"
+    },
+    "messageboxtext": {
+      "type": "string"
+    },
+    "messageboximg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "about_us_comunity_topcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-comunity-topcard.about-us-comunity-topcard",
+      "mappedBy": "about_us_comunity"
+    },
+    "about_us_comunity_bottomcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-comunity-bottomcard.about-us-comunity-bottomcard",
+      "mappedBy": "about_us_comunity"
+    }
+  }
+}

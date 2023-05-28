@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_new_cards",
+  "info": {
+    "singularName": "about-us-new-card",
+    "pluralName": "about-us-new-cards",
+    "displayName": "AboutUSNew-card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "about_us_new": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about-us-new.about-us-new",
+      "inversedBy": "about_us_new_cards"
+    }
+  }
+}
