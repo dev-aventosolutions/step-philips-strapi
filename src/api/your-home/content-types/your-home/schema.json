@@ -11,6 +11,12 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
     "image_c1": {
       "allowedTypes": [
         "images",
@@ -20,12 +26,6 @@
       ],
       "type": "media",
       "multiple": false
-    },
-    "title_c1": {
-      "type": "string"
-    },
-    "desc_c1": {
-      "type": "string"
     },
     "imageoutline_c1": {
       "allowedTypes": [
@@ -37,149 +37,32 @@
       "type": "media",
       "multiple": false
     },
-    "aboutdesc_c2": {
+    "aboutdesc": {
       "type": "text"
     },
-    "image1_c2": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "your_home_card_1s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-card1.your-home-card1",
+      "mappedBy": "your_home"
     },
-    "image2_c2": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "your_home_card_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-card2.your-home-card2",
+      "mappedBy": "your_home"
     },
-    "title1_c2": {
-      "type": "string"
+    "your_home_card_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-card3.your-home-card3",
+      "mappedBy": "your_home"
     },
-    "title2_c2": {
-      "type": "string"
-    },
-    "desc1_c2": {
-      "type": "string"
-    },
-    "desc2_c2": {
-      "type": "string"
-    },
-    "image1_c3": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "title1_c3": {
-      "type": "string"
-    },
-    "desc1_c3": {
-      "type": "string"
-    },
-    "image2_c3": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "title2_c3": {
-      "type": "string"
-    },
-    "desc2_c3": {
-      "type": "string"
-    },
-    "image3_c3": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "title3_c3": {
-      "type": "string"
-    },
-    "desc3_c3": {
-      "type": "string"
-    },
-    "bg_image_c4": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "image1_c4": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "title1_c4": {
-      "type": "string"
-    },
-    "desc1_c4": {
-      "type": "string"
-    },
-    "image2_c4": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "title2_c4": {
-      "type": "string"
-    },
-    "desc2_c4": {
-      "type": "string"
-    },
-    "image3_c4": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "title3_c4": {
-      "type": "string"
-    },
-    "desc3_c4": {
-      "type": "string"
-    },
-    "emergency_desc": {
-      "type": "string"
+    "your_home_emergencies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-emergency.your-home-emergency",
+      "mappedBy": "your_home"
     }
   }
 }

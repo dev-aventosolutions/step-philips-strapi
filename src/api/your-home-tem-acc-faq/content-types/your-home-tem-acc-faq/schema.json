@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_tem_acc_faqs",
+  "info": {
+    "singularName": "your-home-tem-acc-faq",
+    "pluralName": "your-home-tem-acc-faqs",
+    "displayName": "YourHomeTemAcc-faq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "your_home_tem_acc": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-tem-acc.your-home-tem-acc",
+      "inversedBy": "your_home_tem_acc_faqs"
+    }
+  }
+}

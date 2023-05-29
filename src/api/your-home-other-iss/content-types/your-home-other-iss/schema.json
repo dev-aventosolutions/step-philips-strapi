@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_other_isses",
+  "info": {
+    "singularName": "your-home-other-iss",
+    "pluralName": "your-home-other-isses",
+    "displayName": "YourHomeOtherIss"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "your_home_other_iss_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-other-iss-report.your-home-other-iss-report",
+      "mappedBy": "your_home_other_iss"
+    }
+  }
+}

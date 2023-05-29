@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_asbs",
+  "info": {
+    "singularName": "your-home-asb",
+    "pluralName": "your-home-asbs",
+    "displayName": "YourHomeASB"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "your_home_asb_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-asb-report.your-home-asb-report",
+      "mappedBy": "your_home_asb"
+    }
+  }
+}

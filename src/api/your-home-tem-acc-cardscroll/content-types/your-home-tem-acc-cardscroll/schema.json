@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_tem_acc_cardscrolls",
+  "info": {
+    "singularName": "your-home-tem-acc-cardscroll",
+    "pluralName": "your-home-tem-acc-cardscrolls",
+    "displayName": "YourHomeTemAcc-cardscroll"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home_tem_acc": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-tem-acc.your-home-tem-acc",
+      "inversedBy": "your_home_tem_acc_cardscrolls"
+    }
+  }
+}

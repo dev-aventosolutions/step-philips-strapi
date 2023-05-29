@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_tem_acc_card1s",
+  "info": {
+    "singularName": "your-home-tem-acc-card1",
+    "pluralName": "your-home-tem-acc-card1s",
+    "displayName": "YourHomeTemAcc-card1"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home_tem_acc": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-tem-acc.your-home-tem-acc",
+      "inversedBy": "your_home_tem_acc_card_1s"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_tem_accs",
+  "info": {
+    "singularName": "your-home-tem-acc",
+    "pluralName": "your-home-tem-accs",
+    "displayName": "YourHomeTemAcc"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "lastcardtitle": {
+      "type": "string"
+    },
+    "lastcarddesc": {
+      "type": "string"
+    },
+    "lastcardimg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home_tem_acc_card_1s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-tem-acc-card1.your-home-tem-acc-card1",
+      "mappedBy": "your_home_tem_acc"
+    },
+    "your_home_tem_acc_card_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-tem-acc-card2.your-home-tem-acc-card2",
+      "mappedBy": "your_home_tem_acc"
+    },
+    "your_home_tem_acc_cardscrolls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-tem-acc-cardscroll.your-home-tem-acc-cardscroll",
+      "mappedBy": "your_home_tem_acc"
+    },
+    "your_home_tem_acc_card_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-tem-acc-card3.your-home-tem-acc-card3",
+      "mappedBy": "your_home_tem_acc"
+    },
+    "your_home_tem_acc_faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-tem-acc-faq.your-home-tem-acc-faq",
+      "mappedBy": "your_home_tem_acc"
+    }
+  }
+}

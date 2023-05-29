@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_emergencies",
+  "info": {
+    "singularName": "your-home-emergency",
+    "pluralName": "your-home-emergencies",
+    "displayName": "YourHome-emergency"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "number": {
+      "type": "string"
+    },
+    "your_home": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home.your-home",
+      "inversedBy": "your_home_emergencies"
+    }
+  }
+}

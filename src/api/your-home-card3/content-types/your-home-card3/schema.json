@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_card3s",
+  "info": {
+    "singularName": "your-home-card3",
+    "pluralName": "your-home-card3s",
+    "displayName": "YourHome-card3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home.your-home",
+      "inversedBy": "your_home_card_3s"
+    }
+  }
+}

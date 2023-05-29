@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_r_and_ms",
+  "info": {
+    "singularName": "your-home-r-and-m",
+    "pluralName": "your-home-r-and-ms",
+    "displayName": "YourHomeR&M",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "your_home_r_and_m_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-r-and-m-card.your-home-r-and-m-card",
+      "mappedBy": "your_home_r_and_m"
+    },
+    "your_home_r_and_m_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-r-and-m-report.your-home-r-and-m-report",
+      "mappedBy": "your_home_r_and_m"
+    }
+  }
+}

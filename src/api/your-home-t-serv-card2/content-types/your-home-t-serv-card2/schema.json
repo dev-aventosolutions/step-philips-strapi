@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_t_serv_card2s",
+  "info": {
+    "singularName": "your-home-t-serv-card2",
+    "pluralName": "your-home-t-serv-card2s",
+    "displayName": "YourHomeTServ-card2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home_t_serv": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-t-serv.your-home-t-serv",
+      "inversedBy": "your_home_t_serv_card_2s"
+    }
+  }
+}
