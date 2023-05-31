@@ -37,12 +37,6 @@
       "type": "media",
       "multiple": false
     },
-    "contact_howcanwehelps": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::contact-howcanwehelp.contact-howcanwehelp",
-      "mappedBy": "contact"
-    },
     "contact_addresses": {
       "type": "relation",
       "relation": "oneToMany",
@@ -53,6 +47,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::contact-to-report.contact-to-report",
+      "mappedBy": "contact"
+    },
+    "contact_howcanwehelps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-howcanwehelp.contact-howcanwehelp",
       "mappedBy": "contact"
     }
   }
