@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_card5s",
+  "info": {
+    "singularName": "main-card5",
+    "pluralName": "main-card5s",
+    "displayName": "Main-card5"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "main": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::main.main",
+      "inversedBy": "main_card_5s"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_myts",
+  "info": {
+    "singularName": "your-home-myt",
+    "pluralName": "your-home-myts",
+    "displayName": "YourHomeMYT"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home_myt_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-myt-card.your-home-myt-card",
+      "mappedBy": "your_home_myt"
+    },
+    "your_home_myt_reasons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-myt-reason.your-home-myt-reason",
+      "mappedBy": "your_home_myt"
+    }
+  }
+}

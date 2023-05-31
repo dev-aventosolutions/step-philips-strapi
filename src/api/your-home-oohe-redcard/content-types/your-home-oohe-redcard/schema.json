@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_oohe_redcards",
+  "info": {
+    "singularName": "your-home-oohe-redcard",
+    "pluralName": "your-home-oohe-redcards",
+    "displayName": "YourHomeOOHE-redcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home_oohe": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-oohe.your-home-oohe",
+      "inversedBy": "your_home_oohe_redcards"
+    }
+  }
+}

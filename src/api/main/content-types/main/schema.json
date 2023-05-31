@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mains",
+  "info": {
+    "singularName": "main",
+    "pluralName": "mains",
+    "displayName": "Main"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_c1": {
+      "type": "string"
+    },
+    "desc_c1": {
+      "type": "string"
+    },
+    "image_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline_c1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "main_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::main-card.main-card",
+      "mappedBy": "main"
+    },
+    "main_stats": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::main-stat.main-stat",
+      "mappedBy": "main"
+    },
+    "main_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::main-message.main-message",
+      "mappedBy": "main"
+    },
+    "main_card_5s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::main-card5.main-card5",
+      "mappedBy": "main"
+    },
+    "main_lastcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::main-lastcard.main-lastcard",
+      "mappedBy": "main"
+    }
+  }
+}

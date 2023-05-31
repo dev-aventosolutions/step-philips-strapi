@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_lastcards",
+  "info": {
+    "singularName": "main-lastcard",
+    "pluralName": "main-lastcards",
+    "displayName": "Main-lastcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "main": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::main.main",
+      "inversedBy": "main_lastcards"
+    }
+  }
+}

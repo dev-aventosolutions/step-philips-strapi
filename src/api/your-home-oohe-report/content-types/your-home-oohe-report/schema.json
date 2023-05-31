@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_oohe_reports",
+  "info": {
+    "singularName": "your-home-oohe-report",
+    "pluralName": "your-home-oohe-reports",
+    "displayName": "YourHomeOOHE-report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "your_home_oohe": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-oohe.your-home-oohe",
+      "inversedBy": "your_home_oohe_reports"
+    }
+  }
+}
