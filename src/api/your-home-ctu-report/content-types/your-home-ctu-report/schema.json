@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_ctu_reports",
+  "info": {
+    "singularName": "your-home-ctu-report",
+    "pluralName": "your-home-ctu-reports",
+    "displayName": "YourHomeCTU-report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "your_home_ctu": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-ctu.your-home-ctu",
+      "inversedBy": "your_home_ctu_reports"
+    }
+  }
+}
