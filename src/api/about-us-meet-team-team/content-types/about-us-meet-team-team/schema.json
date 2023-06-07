@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-us-meet-team-team",
     "pluralName": "about-us-meet-team-teams",
-    "displayName": "AboutUsMeetTeam-team"
+    "displayName": "AboutUsMeetTeam-team1",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "about_us_meet_team": {
       "type": "relation",

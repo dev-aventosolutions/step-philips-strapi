@@ -29,6 +29,36 @@
       "relation": "oneToMany",
       "target": "api::about-us-meet-team-message.about-us-meet-team-message",
       "mappedBy": "about_us_meet_team"
+    },
+    "about_us_meet_team_team_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-meet-team-team2.about-us-meet-team-team2",
+      "mappedBy": "about_us_meet_team"
+    },
+    "about_us_meet_team_team_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-meet-team-team3.about-us-meet-team-team3",
+      "mappedBy": "about_us_meet_team"
+    },
+    "about_us_meet_team_team_4s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-meet-team-team4.about-us-meet-team-team4",
+      "mappedBy": "about_us_meet_team"
+    },
+    "about_us_meet_team_message_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-meet-team-message2.about-us-meet-team-message2",
+      "mappedBy": "about_us_meet_team"
+    },
+    "about_us_meet_team_message_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-meet-team-message3.about-us-meet-team-message3",
+      "mappedBy": "about_us_meet_team"
     }
   }
 }
