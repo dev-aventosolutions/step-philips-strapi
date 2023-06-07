@@ -27,16 +27,7 @@
     "desc_c1": {
       "type": "text"
     },
-    "messageboxname": {
-      "type": "string"
-    },
-    "messageboxtitle": {
-      "type": "string"
-    },
-    "messageboxtext": {
-      "type": "text"
-    },
-    "messageboximg": {
+    "mainimg": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -58,6 +49,24 @@
       "relation": "oneToMany",
       "target": "api::about-us-comunity-bottomcard.about-us-comunity-bottomcard",
       "mappedBy": "about_us_comunity"
+    },
+    "about_us_comunity_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-comunity-message.about-us-comunity-message",
+      "mappedBy": "about_us_comunity"
+    },
+    "maintag": {
+      "type": "string"
+    },
+    "maintitle": {
+      "type": "string"
+    },
+    "maindesc": {
+      "type": "text"
+    },
+    "mainbutton": {
+      "type": "string"
     }
   }
 }
