@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-us-comunity",
     "pluralName": "about-us-comunities",
-    "displayName": "AboutUsComunity"
+    "displayName": "AboutUsComunity",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,7 +25,7 @@
       "type": "string"
     },
     "desc_c1": {
-      "type": "string"
+      "type": "text"
     },
     "messageboxname": {
       "type": "string"
@@ -33,17 +34,18 @@
       "type": "string"
     },
     "messageboxtext": {
-      "type": "string"
+      "type": "text"
     },
     "messageboximg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "about_us_comunity_topcards": {
       "type": "relation",

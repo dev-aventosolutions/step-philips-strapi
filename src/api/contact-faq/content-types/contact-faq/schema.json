@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-faq",
     "pluralName": "contact-faqs",
-    "displayName": "ContactFAQ"
+    "displayName": "ContactFAQ",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "contacts_faqs": {
       "type": "relation",

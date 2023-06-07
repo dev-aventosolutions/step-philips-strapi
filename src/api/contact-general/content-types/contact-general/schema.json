@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-general",
     "pluralName": "contact-generals",
-    "displayName": "ContactGeneral"
+    "displayName": "ContactGeneral",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "contact_general_to_reports": {
       "type": "relation",

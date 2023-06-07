@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-us-comunity-topcard",
     "pluralName": "about-us-comunity-topcards",
-    "displayName": "AboutUsComunity-topcard"
+    "displayName": "AboutUsComunity-topcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "url": {
       "type": "string"

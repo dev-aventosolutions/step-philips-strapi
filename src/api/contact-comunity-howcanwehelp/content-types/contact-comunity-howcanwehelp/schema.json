@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-comunity-howcanwehelp",
     "pluralName": "contact-comunity-howcanwehelps",
-    "displayName": "ContactComunity-howcanwehelp"
+    "displayName": "ContactComunity-howcanwehelp",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,17 +13,18 @@
   "pluginOptions": {},
   "attributes": {
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "contact_comunity": {
       "type": "relation",

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-investor-to-report",
     "pluralName": "contact-investor-to-reports",
-    "displayName": "ContactInvestor-to-report"
+    "displayName": "ContactInvestor-to-report",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "contact_investor": {
       "type": "relation",

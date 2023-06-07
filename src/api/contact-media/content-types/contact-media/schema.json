@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-media",
     "pluralName": "contact-medias",
-    "displayName": "ContactMedia"
+    "displayName": "ContactMedia",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "contact_media_to_calls": {
       "type": "relation",

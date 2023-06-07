@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-us",
     "pluralName": "about-uses",
-    "displayName": "AboutUs"
+    "displayName": "AboutUs",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,37 +16,40 @@
       "type": "string"
     },
     "desc_c1": {
-      "type": "string"
+      "type": "text"
     },
     "image_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "unique_approach_title": {
       "type": "string"
@@ -54,36 +58,38 @@
       "type": "string"
     },
     "unique_approach_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "desc1_c2": {
-      "type": "string"
+      "type": "text"
     },
     "desc2_c2": {
-      "type": "string"
+      "type": "text"
     },
     "desc3_c2": {
-      "type": "string"
+      "type": "text"
     },
     "desc4_c2": {
-      "type": "string"
+      "type": "text"
     },
     "image_c2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "about_us_cards": {
       "type": "relation",

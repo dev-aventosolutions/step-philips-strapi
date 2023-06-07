@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-us-new",
     "pluralName": "about-us-news",
-    "displayName": "AboutUSNew"
+    "displayName": "AboutUSNew",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "about_us_new_cards": {
       "type": "relation",

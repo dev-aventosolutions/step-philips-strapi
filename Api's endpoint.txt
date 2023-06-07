@@ -13,6 +13,7 @@ YourHomeTenantService : /api/your-home-t-servs?populate=deep,3
 YourHomeTenantServiceTemporaryAccommodation : /api/your-home-tem-accs?populate=deep,3
 YourHomeTenantServicePRS : /api/yh-tenant-services-prs?populate=deep,2
 YourHomeMeetYourTeam : /api/your-home-myts?populate=deep,3
+YourHomeCouncilandUtilities: /api/your-home-ctus?populate=deep,2
 HelpAndAdvice : /api/help-and-advices?populate=deep,4
 HelpAndAdviceNationalHelplines : /api/national-helplines?populate=deep,3
 HousingPartner : /api/housing-partners?populate=deep,3

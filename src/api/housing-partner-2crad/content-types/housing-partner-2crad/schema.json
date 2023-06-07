@@ -4,7 +4,8 @@
   "info": {
     "singularName": "housing-partner-2crad",
     "pluralName": "housing-partner-2crads",
-    "displayName": "HousingPartner-2crad"
+    "displayName": "HousingPartner-2crad",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "housing_partner": {
       "type": "relation",

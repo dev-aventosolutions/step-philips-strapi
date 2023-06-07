@@ -4,7 +4,8 @@
   "info": {
     "singularName": "help-and-advice-card",
     "pluralName": "help-and-advice-cards",
-    "displayName": "HelpAndAdvice-card"
+    "displayName": "HelpAndAdvice-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "help_and_advice": {
       "type": "relation",

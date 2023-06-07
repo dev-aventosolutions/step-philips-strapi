@@ -4,7 +4,8 @@
   "info": {
     "singularName": "corporate-investor-scrollbox1",
     "pluralName": "corporate-investor-scrollbox1s",
-    "displayName": "CorporateInvestor-scrollbox1"
+    "displayName": "CorporateInvestor-scrollbox1",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,17 +13,18 @@
   "pluginOptions": {},
   "attributes": {
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "corporate_investor": {
       "type": "relation",

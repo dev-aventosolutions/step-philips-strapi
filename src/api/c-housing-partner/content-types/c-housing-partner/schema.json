@@ -4,7 +4,8 @@
   "info": {
     "singularName": "c-housing-partner",
     "pluralName": "c-housing-partners",
-    "displayName": "CHousingPartner"
+    "displayName": "CHousingPartner",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "c_housing_partner_calls": {
       "type": "relation",
