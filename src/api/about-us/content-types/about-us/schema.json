@@ -55,7 +55,7 @@
       "type": "string"
     },
     "unique_approach_desc": {
-      "type": "string"
+      "type": "text"
     },
     "unique_approach_img": {
       "type": "media",
