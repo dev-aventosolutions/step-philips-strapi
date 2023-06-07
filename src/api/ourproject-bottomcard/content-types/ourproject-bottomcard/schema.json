@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ourproject-bottomcard",
     "pluralName": "ourproject-bottomcards",
-    "displayName": "Ourproject-bottomcard"
+    "displayName": "Ourproject-bottomcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "ourproject": {
       "type": "relation",

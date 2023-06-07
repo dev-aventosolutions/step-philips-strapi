@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporate_investor_iconc3s",
+  "info": {
+    "singularName": "corporate-investor-iconc3",
+    "pluralName": "corporate-investor-iconc3s",
+    "displayName": "CorporateInvestor-iconc3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "corporate_investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::corporate-investor.corporate-investor",
+      "inversedBy": "corporate_investor_iconc_3s"
+    }
+  }
+}

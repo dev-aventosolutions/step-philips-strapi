@@ -4,7 +4,8 @@
   "info": {
     "singularName": "private-invester-card",
     "pluralName": "private-invester-cards",
-    "displayName": "PrivateInvester-card"
+    "displayName": "PrivateInvester-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,27 +16,29 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "private_invester": {
       "type": "relation",

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "private-invester-bgc6",
     "pluralName": "private-invester-bgc6s",
-    "displayName": "PrivateInvester-bgc6"
+    "displayName": "PrivateInvester-bgc6",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "private_invester": {
       "type": "relation",

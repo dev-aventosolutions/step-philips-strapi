@@ -4,7 +4,8 @@
   "info": {
     "singularName": "hp-accommodation-type-card",
     "pluralName": "hp-accommodation-type-cards",
-    "displayName": "HPAccommodationType-card"
+    "displayName": "HPAccommodationType-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,27 +16,29 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "hp_accommodation_type": {
       "type": "relation",

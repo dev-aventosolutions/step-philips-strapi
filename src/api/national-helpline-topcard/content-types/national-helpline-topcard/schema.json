@@ -4,7 +4,8 @@
   "info": {
     "singularName": "national-helpline-topcard",
     "pluralName": "national-helpline-topcards",
-    "displayName": "NationalHelpline-topcard"
+    "displayName": "NationalHelpline-topcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "national_helpline": {
       "type": "relation",

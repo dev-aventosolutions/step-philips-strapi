@@ -18,15 +18,6 @@
     "description": {
       "type": "text"
     },
-    "title_c1": {
-      "type": "string"
-    },
-    "date_c1": {
-      "type": "string"
-    },
-    "desc_c1": {
-      "type": "text"
-    },
     "mainimg": {
       "type": "media",
       "multiple": false,

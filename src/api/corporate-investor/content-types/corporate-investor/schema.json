@@ -84,6 +84,18 @@
       "relation": "oneToMany",
       "target": "api::corporate-investor-faq.corporate-investor-faq",
       "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_iconc_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-iconc3.corporate-investor-iconc3",
+      "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_brochures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-brochure.corporate-investor-brochure",
+      "mappedBy": "corporate_investor"
     }
   }
 }

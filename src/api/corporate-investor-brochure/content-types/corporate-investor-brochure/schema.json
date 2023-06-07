@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "corporate_investor_cards",
+  "collectionName": "corporate_investor_brochures",
   "info": {
-    "singularName": "corporate-investor-card",
-    "pluralName": "corporate-investor-cards",
-    "displayName": "CorporateInvestor-card",
-    "description": ""
+    "singularName": "corporate-investor-brochure",
+    "pluralName": "corporate-investor-brochures",
+    "displayName": "CorporateInvestor-brochure"
   },
   "options": {
     "draftAndPublish": true
@@ -19,32 +18,23 @@
       "type": "text"
     },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
-    "imageoutline": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "url": {
+      "type": "string"
     },
     "corporate_investor": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::corporate-investor.corporate-investor",
-      "inversedBy": "corporate_investor_cards"
+      "inversedBy": "corporate_investor_brochures"
     }
   }
 }
