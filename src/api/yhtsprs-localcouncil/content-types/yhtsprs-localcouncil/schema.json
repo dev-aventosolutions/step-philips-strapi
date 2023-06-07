@@ -4,7 +4,8 @@
   "info": {
     "singularName": "yhtsprs-localcouncil",
     "pluralName": "yhtsprs-localcouncils",
-    "displayName": "YHTSPRS-localcouncil"
+    "displayName": "YHTSPRS-localcouncil",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "yh_tenant_services_pr": {
       "type": "relation",

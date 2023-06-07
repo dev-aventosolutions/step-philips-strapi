@@ -4,7 +4,8 @@
   "info": {
     "singularName": "whereweoperate",
     "pluralName": "whereweoperates",
-    "displayName": "whereweoperate"
+    "displayName": "whereweoperate",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,43 +16,46 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "titlecard": {
       "type": "string"
     },
     "desc1card": {
-      "type": "string"
+      "type": "text"
     },
     "imagecard": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imagecardoutline": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "whereweoperate_smallcards": {
       "type": "relation",

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project-template-card",
     "pluralName": "project-template-cards",
-    "displayName": "ProjectTemplate-card"
+    "displayName": "ProjectTemplate-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "project_template": {
       "type": "relation",

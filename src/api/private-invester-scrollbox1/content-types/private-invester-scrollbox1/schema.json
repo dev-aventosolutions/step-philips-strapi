@@ -4,7 +4,8 @@
   "info": {
     "singularName": "private-invester-scrollbox1",
     "pluralName": "private-invester-scrollbox1s",
-    "displayName": "PrivateInvester-scrollbox1"
+    "displayName": "PrivateInvester-scrollbox1",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,17 +13,18 @@
   "pluginOptions": {},
   "attributes": {
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "private_invester": {
       "type": "relation",
