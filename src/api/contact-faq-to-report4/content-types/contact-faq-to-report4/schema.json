@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_faq_to_report4s",
+  "info": {
+    "singularName": "contact-faq-to-report4",
+    "pluralName": "contact-faq-to-report4s",
+    "displayName": "ContactFAQ-to-report4"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "contact_faq": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-faq.contact-faq",
+      "inversedBy": "contact_faq_to_report_4s"
+    }
+  }
+}

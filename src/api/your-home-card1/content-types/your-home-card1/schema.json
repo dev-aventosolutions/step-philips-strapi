@@ -4,7 +4,8 @@
   "info": {
     "singularName": "your-home-card1",
     "pluralName": "your-home-card1s",
-    "displayName": "YourHome-card1"
+    "displayName": "YourHome-card1",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,18 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "your_home": {
       "type": "relation",

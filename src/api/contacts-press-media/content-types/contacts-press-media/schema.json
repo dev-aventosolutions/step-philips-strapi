@@ -4,28 +4,25 @@
   "info": {
     "singularName": "contacts-press-media",
     "pluralName": "contacts-press-medias",
-    "displayName": "ContactsPressMedia"
+    "displayName": "ContactsPressMedia",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "title": {
       "type": "string"
     },
     "description": {
       "type": "text"
+    },
+    "contacts_press_media_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contacts-press-media-card.contacts-press-media-card",
+      "mappedBy": "contacts_press_media"
     }
   }
 }
