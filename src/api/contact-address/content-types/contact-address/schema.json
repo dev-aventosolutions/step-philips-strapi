@@ -26,6 +26,9 @@
       "relation": "manyToOne",
       "target": "api::contact.contact",
       "inversedBy": "contact_addresses"
+    },
+    "mapUrl": {
+      "type": "string"
     }
   }
 }

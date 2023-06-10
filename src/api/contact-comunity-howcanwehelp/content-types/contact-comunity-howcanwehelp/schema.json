@@ -31,6 +31,9 @@
       "relation": "manyToOne",
       "target": "api::contact-comunity.contact-comunity",
       "inversedBy": "contact_comunity_howcanwehelps"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }

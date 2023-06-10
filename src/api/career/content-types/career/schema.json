@@ -37,17 +37,6 @@
         "audios"
       ]
     },
-    "video": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "careers_cards": {
       "type": "relation",
       "relation": "oneToMany",
@@ -89,6 +78,9 @@
       "relation": "oneToMany",
       "target": "api::careers-whatnext.careers-whatnext",
       "mappedBy": "career"
+    },
+    "videoUrl": {
+      "type": "string"
     }
   }
 }

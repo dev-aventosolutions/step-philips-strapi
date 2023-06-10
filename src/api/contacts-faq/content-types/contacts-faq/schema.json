@@ -31,6 +31,9 @@
       "relation": "manyToOne",
       "target": "api::contact-faq.contact-faq",
       "inversedBy": "contacts_faqs"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
