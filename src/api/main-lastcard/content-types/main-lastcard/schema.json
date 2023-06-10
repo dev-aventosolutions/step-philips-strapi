@@ -4,7 +4,8 @@
   "info": {
     "singularName": "main-lastcard",
     "pluralName": "main-lastcards",
-    "displayName": "Main-lastcard"
+    "displayName": "Main-lastcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,27 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "main": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::main.main",
       "inversedBy": "main_lastcards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }

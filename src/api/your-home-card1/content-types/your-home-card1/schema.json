@@ -34,6 +34,9 @@
       "relation": "manyToOne",
       "target": "api::your-home.your-home",
       "inversedBy": "your_home_card_1s"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
