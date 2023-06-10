@@ -34,6 +34,12 @@
       "relation": "manyToOne",
       "target": "api::help-and-advice.help-and-advice",
       "inversedBy": "help_and_advice_cards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }
