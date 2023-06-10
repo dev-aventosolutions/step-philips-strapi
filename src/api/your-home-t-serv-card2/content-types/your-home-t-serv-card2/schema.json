@@ -4,7 +4,8 @@
   "info": {
     "singularName": "your-home-t-serv-card2",
     "pluralName": "your-home-t-serv-card2s",
-    "displayName": "YourHomeTServ-card2"
+    "displayName": "YourHomeTServ-card2",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,27 @@
       "type": "string"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "your_home_t_serv": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::your-home-t-serv.your-home-t-serv",
       "inversedBy": "your_home_t_serv_card_2s"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }
