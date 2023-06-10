@@ -4,7 +4,8 @@
   "info": {
     "singularName": "your-home-card2",
     "pluralName": "your-home-card2s",
-    "displayName": "YourHome-card2"
+    "displayName": "YourHome-card2",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,20 +16,27 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "your_home": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::your-home.your-home",
       "inversedBy": "your_home_card_2s"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }

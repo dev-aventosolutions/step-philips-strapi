@@ -35,7 +35,10 @@
       "target": "api::your-home.your-home",
       "inversedBy": "your_home_card_1s"
     },
-    "url": {
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnTitle": {
       "type": "string"
     }
   }

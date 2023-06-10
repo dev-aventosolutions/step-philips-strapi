@@ -4,7 +4,8 @@
   "info": {
     "singularName": "your-home-card3",
     "pluralName": "your-home-card3s",
-    "displayName": "YourHome-card3"
+    "displayName": "YourHome-card3",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,24 +18,28 @@
     "description": {
       "type": "string"
     },
-    "url": {
+    "btnUrl": {
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "your_home": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::your-home.your-home",
       "inversedBy": "your_home_card_3s"
+    },
+    "btnTitle": {
+      "type": "string"
     }
   }
 }
