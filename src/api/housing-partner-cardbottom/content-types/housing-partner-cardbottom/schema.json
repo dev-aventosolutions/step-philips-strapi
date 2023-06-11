@@ -51,6 +51,9 @@
     },
     "btnUrl": {
       "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }

@@ -84,6 +84,12 @@
       "relation": "oneToMany",
       "target": "api::housing-partner-2crad.housing-partner-2crad",
       "mappedBy": "housing_partner"
+    },
+    "housing_partner_brochures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-brochure.housing-partner-brochure",
+      "mappedBy": "housing_partner"
     }
   }
 }

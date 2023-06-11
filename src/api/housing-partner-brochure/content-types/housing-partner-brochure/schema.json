@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "housing_partner_brochures",
+  "info": {
+    "singularName": "housing-partner-brochure",
+    "pluralName": "housing-partner-brochures",
+    "displayName": "HousingPartner-brochure"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
+    },
+    "housing_partner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::housing-partner.housing-partner",
+      "inversedBy": "housing_partner_brochures"
+    }
+  }
+}
