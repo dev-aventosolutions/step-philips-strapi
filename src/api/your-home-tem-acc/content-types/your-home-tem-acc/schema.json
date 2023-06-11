@@ -82,6 +82,12 @@
       "relation": "oneToMany",
       "target": "api::your-home-tem-acc-faq.your-home-tem-acc-faq",
       "mappedBy": "your_home_tem_acc"
+    },
+    "your_home_tem_acc_bottomcard": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::your-home-tem-acc-bottomcard.your-home-tem-acc-bottomcard",
+      "mappedBy": "your_home_tem_acc"
     }
   }
 }

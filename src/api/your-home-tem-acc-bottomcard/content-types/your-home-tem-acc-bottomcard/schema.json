@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_tem_acc_bottomcards",
+  "info": {
+    "singularName": "your-home-tem-acc-bottomcard",
+    "pluralName": "your-home-tem-acc-bottomcards",
+    "displayName": "YourHomeTemAcc-bottomcard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
+    },
+    "your_home_tem_acc": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::your-home-tem-acc.your-home-tem-acc",
+      "inversedBy": "your_home_tem_acc_bottomcard"
+    }
+  }
+}
