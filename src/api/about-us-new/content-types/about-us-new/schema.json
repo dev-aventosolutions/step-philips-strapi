@@ -23,6 +23,12 @@
       "relation": "oneToMany",
       "target": "api::about-us-new-card.about-us-new-card",
       "mappedBy": "about_us_new"
+    },
+    "about_us_new_tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-new-tag.about-us-new-tag",
+      "mappedBy": "about_us_new"
     }
   }
 }

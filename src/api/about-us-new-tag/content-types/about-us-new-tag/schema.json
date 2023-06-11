@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_new_tags",
+  "info": {
+    "singularName": "about-us-new-tag",
+    "pluralName": "about-us-new-tags",
+    "displayName": "AboutUSNew-tag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "about_us_new": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about-us-new.about-us-new",
+      "inversedBy": "about_us_new_tags"
+    }
+  }
+}

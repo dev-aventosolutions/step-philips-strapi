@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_faq_faq_titles",
+  "info": {
+    "singularName": "contact-faq-faq-title",
+    "pluralName": "contact-faq-faq-titles",
+    "displayName": "ContactFAQ-faqTitle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FaqHeader": {
+      "type": "string"
+    },
+    "contact_faq": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-faq.contact-faq",
+      "inversedBy": "contact_faq_faq_title"
+    }
+  }
+}

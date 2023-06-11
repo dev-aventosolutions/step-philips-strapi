@@ -40,17 +40,6 @@
         "audios"
       ]
     },
-    "video": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "unique_approach_title": {
       "type": "string"
     },
@@ -114,6 +103,9 @@
       "relation": "oneToMany",
       "target": "api::about-us-message.about-us-message",
       "mappedBy": "about_us"
+    },
+    "videoUrl": {
+      "type": "string"
     }
   }
 }

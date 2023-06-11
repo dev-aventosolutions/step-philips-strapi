@@ -64,6 +64,12 @@
       "relation": "oneToMany",
       "target": "api::your-home-t-serv-card2.your-home-t-serv-card2",
       "mappedBy": "your_home_t_serv"
+    },
+    "your_home_t_serv_card_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-t-serv-card3.your-home-t-serv-card3",
+      "mappedBy": "your_home_t_serv"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "yhtsprs-1card",
     "pluralName": "yhtsprs-1cards",
-    "displayName": "YHTSPRS-1card"
+    "displayName": "YHTSPRS-1card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,30 +19,50 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "yh_tenant_services_pr": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
       "inversedBy": "yhtsprs_1_cards"
+    },
+    "btn1Title": {
+      "type": "string"
+    },
+    "btn2Title": {
+      "type": "string"
+    },
+    "btn1Url": {
+      "type": "string"
+    },
+    "btn2Url": {
+      "type": "string"
+    },
+    "btn1Color": {
+      "type": "string"
+    },
+    "btn2Color": {
+      "type": "string"
     }
   }
 }

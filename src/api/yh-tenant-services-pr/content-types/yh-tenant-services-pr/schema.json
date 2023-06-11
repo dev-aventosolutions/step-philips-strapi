@@ -72,6 +72,12 @@
       "relation": "oneToMany",
       "target": "api::yhtsprs-lastcard.yhtsprs-lastcard",
       "mappedBy": "yh_tenant_services_pr"
+    },
+    "yhtsprs_bottomcard": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::yhtsprs-bottomcard.yhtsprs-bottomcard",
+      "mappedBy": "yh_tenant_services_pr"
     }
   }
 }

@@ -65,6 +65,12 @@
       "relation": "oneToMany",
       "target": "api::contact-faq-to-report7.contact-faq-to-report7",
       "mappedBy": "contact_faq"
+    },
+    "contact_faq_faq_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact-faq-faq-title.contact-faq-faq-title",
+      "mappedBy": "contact_faq"
     }
   }
 }

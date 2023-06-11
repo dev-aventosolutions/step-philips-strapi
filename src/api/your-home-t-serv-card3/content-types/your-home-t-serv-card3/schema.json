@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_t_serv_card3s",
+  "info": {
+    "singularName": "your-home-t-serv-card3",
+    "pluralName": "your-home-t-serv-card3s",
+    "displayName": "YourHomeTServ-card3"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
+    },
+    "your_home_t_serv": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-t-serv.your-home-t-serv",
+      "inversedBy": "your_home_t_serv_card_3s"
+    }
+  }
+}
