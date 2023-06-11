@@ -4,7 +4,8 @@
   "info": {
     "singularName": "housing-partner-bluecard",
     "pluralName": "housing-partner-bluecards",
-    "displayName": "HousingPartner-bluecard"
+    "displayName": "HousingPartner-bluecard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,27 @@
       "type": "text"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "housing_partner": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::housing-partner.housing-partner",
       "inversedBy": "housing_partner_bluecards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }

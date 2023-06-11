@@ -4,7 +4,8 @@
   "info": {
     "singularName": "investor-card",
     "pluralName": "investor-cards",
-    "displayName": "Investor-card"
+    "displayName": "Investor-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,30 +19,38 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "investor": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::investor.investor",
       "inversedBy": "investor_cards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }

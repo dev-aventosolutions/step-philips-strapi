@@ -45,6 +45,12 @@
       "relation": "manyToOne",
       "target": "api::housing-partner.housing-partner",
       "inversedBy": "housing_partner_cardbottoms"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }

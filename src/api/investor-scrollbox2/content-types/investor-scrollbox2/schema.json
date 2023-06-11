@@ -4,7 +4,8 @@
   "info": {
     "singularName": "investor-scrollbox2",
     "pluralName": "investor-scrollbox2s",
-    "displayName": "Investor-scrollbox2"
+    "displayName": "Investor-scrollbox2",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,27 @@
       "type": "text"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "investor": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::investor.investor",
       "inversedBy": "investor_scrollbox_2s"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }

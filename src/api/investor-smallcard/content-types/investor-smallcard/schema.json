@@ -4,7 +4,8 @@
   "info": {
     "singularName": "investor-smallcard",
     "pluralName": "investor-smallcards",
-    "displayName": "Investor-smallcard"
+    "displayName": "Investor-smallcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,27 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "investor": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::investor.investor",
       "inversedBy": "investor_smallcards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }

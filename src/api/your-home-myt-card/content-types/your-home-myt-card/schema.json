@@ -4,7 +4,8 @@
   "info": {
     "singularName": "your-home-myt-card",
     "pluralName": "your-home-myt-cards",
-    "displayName": "YourHomeMYT-card"
+    "displayName": "YourHomeMYT-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,30 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "your_home_myt": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::your-home-myt.your-home-myt",
       "inversedBy": "your_home_myt_cards"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
     }
   }
 }
