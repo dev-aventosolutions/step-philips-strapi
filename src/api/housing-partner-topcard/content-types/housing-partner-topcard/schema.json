@@ -46,10 +46,22 @@
       "target": "api::housing-partner.housing-partner",
       "inversedBy": "housing_partner_topcards"
     },
-    "btnTitle": {
+    "btn1Title": {
       "type": "string"
     },
-    "btnUrl": {
+    "btn1Url": {
+      "type": "string"
+    },
+    "btn1Color": {
+      "type": "string"
+    },
+    "btn2Url": {
+      "type": "string"
+    },
+    "btn2Title": {
+      "type": "string"
+    },
+    "btn2Color": {
       "type": "string"
     }
   }
