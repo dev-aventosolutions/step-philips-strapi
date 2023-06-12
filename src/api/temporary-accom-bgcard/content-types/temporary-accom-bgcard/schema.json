@@ -4,7 +4,8 @@
   "info": {
     "singularName": "temporary-accom-bgcard",
     "pluralName": "temporary-accom-bgcards",
-    "displayName": "TemporaryAccom-bgcard"
+    "displayName": "TemporaryAccom-bgcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,30 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "temporary_accom": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::temporary-accom.temporary-accom",
       "inversedBy": "temporary_accom_bgcards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }
