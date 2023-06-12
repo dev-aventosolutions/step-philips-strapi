@@ -4,7 +4,8 @@
   "info": {
     "singularName": "careers-card",
     "pluralName": "careers-cards",
-    "displayName": "Careers-card"
+    "displayName": "Careers-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,30 +19,41 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "career": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::career.career",
       "inversedBy": "careers_cards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }

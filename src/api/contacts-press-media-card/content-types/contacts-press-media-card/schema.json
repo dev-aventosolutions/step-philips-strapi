@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contacts-press-media-card",
     "pluralName": "contacts-press-media-cards",
-    "displayName": "ContactsPressMedia-card"
+    "displayName": "ContactsPressMedia-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,16 +19,17 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "url": {
+    "btnTitle": {
       "type": "string"
     },
     "contacts_press_media": {
@@ -35,6 +37,12 @@
       "relation": "manyToOne",
       "target": "api::contacts-press-media.contacts-press-media",
       "inversedBy": "contacts_press_media_cards"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }

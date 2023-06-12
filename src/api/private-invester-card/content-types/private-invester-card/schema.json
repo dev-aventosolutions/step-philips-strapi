@@ -45,6 +45,15 @@
       "relation": "manyToOne",
       "target": "api::private-invester.private-invester",
       "inversedBy": "private_invester_cards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }
