@@ -45,6 +45,15 @@
       "relation": "manyToOne",
       "target": "api::corporate-investor.corporate-investor",
       "inversedBy": "corporate_investor_cards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }

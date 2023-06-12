@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "temporary_accom_blankcards",
+  "collectionName": "whereweoperate_cards",
   "info": {
-    "singularName": "temporary-accom-blankcard",
-    "pluralName": "temporary-accom-blankcards",
-    "displayName": "TemporaryAccom-blankcard",
-    "description": ""
+    "singularName": "whereweoperate-card",
+    "pluralName": "whereweoperate-cards",
+    "displayName": "Whereweoperate-card"
   },
   "options": {
     "draftAndPublish": true
@@ -19,32 +18,24 @@
       "type": "text"
     },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
     "imageoutline": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
-    },
-    "temporary_accom": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::temporary-accom.temporary-accom",
-      "inversedBy": "temporary_accom_blankcards"
+      ],
+      "type": "media",
+      "multiple": false
     },
     "btnTitle": {
       "type": "string"
@@ -54,6 +45,12 @@
     },
     "btnColor": {
       "type": "string"
+    },
+    "whereweoperate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::whereweoperate.whereweoperate",
+      "inversedBy": "whereweoperate_cards"
     }
   }
 }

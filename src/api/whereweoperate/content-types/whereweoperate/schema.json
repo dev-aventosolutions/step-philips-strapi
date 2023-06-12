@@ -68,6 +68,12 @@
       "relation": "oneToMany",
       "target": "api::whereweoperate-lastblue.whereweoperate-lastblue",
       "mappedBy": "whereweoperate"
+    },
+    "whereweoperate_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::whereweoperate-card.whereweoperate-card",
+      "mappedBy": "whereweoperate"
     }
   }
 }
