@@ -22,6 +22,12 @@
       "relation": "oneToMany",
       "target": "api::download-card.download-card",
       "mappedBy": "download"
+    },
+    "download_tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::download-tag.download-tag",
+      "mappedBy": "download"
     }
   }
 }
