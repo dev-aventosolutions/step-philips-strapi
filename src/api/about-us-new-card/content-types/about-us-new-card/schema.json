@@ -37,6 +37,11 @@
       "relation": "manyToOne",
       "target": "api::about-us-new.about-us-new",
       "inversedBy": "about_us_new_cards"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

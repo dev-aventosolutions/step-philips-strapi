@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-us-new-article",
     "pluralName": "about-us-new-articles",
-    "displayName": "AboutUSNew-Article"
+    "displayName": "AboutUSNew-Article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,27 +19,29 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
       "type": "text"
     },
     "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "messageboxname": {
       "type": "string"
@@ -48,6 +51,11 @@
     },
     "messageboxtitle": {
       "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

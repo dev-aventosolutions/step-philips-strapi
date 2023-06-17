@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_article_content1s",
+  "info": {
+    "singularName": "news-article-content1",
+    "pluralName": "news-article-content1s",
+    "displayName": "NewsArticle-content1"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "news_article": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::news-article.news-article",
+      "inversedBy": "news_article_content_1s"
+    }
+  }
+}

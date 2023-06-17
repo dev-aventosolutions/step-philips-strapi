@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
     "category": {
@@ -29,49 +29,53 @@
         "audios"
       ]
     },
-    "text1": {
-      "type": "text"
-    },
-    "text2": {
-      "type": "text"
-    },
-    "text3": {
-      "type": "text"
-    },
-    "text4": {
-      "type": "text"
-    },
-    "text5": {
-      "type": "text"
-    },
-    "text6": {
-      "type": "string"
-    },
-    "messageboxtext": {
-      "type": "text"
-    },
-    "messageboxname": {
-      "type": "string"
-    },
-    "messageboxtitle": {
-      "type": "string"
-    },
-    "video": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "authorname": {
       "type": "string"
     },
     "date": {
       "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "fb": {
+      "type": "string"
+    },
+    "insta": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "news_article_content_1s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-article-content1.news-article-content1",
+      "mappedBy": "news_article"
+    },
+    "news_article_content_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-article-content2.news-article-content2",
+      "mappedBy": "news_article"
+    },
+    "news_article_content_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-article-content3.news-article-content3",
+      "mappedBy": "news_article"
+    },
+    "news_article_messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-article-message.news-article-message",
+      "mappedBy": "news_article"
+    },
+    "news_article_authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-article-author.news-article-author",
+      "mappedBy": "news_article"
     }
   }
 }

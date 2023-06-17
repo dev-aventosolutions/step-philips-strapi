@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_article_authors",
+  "info": {
+    "singularName": "news-article-author",
+    "pluralName": "news-article-authors",
+    "displayName": "NewsArticle-author"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "fb": {
+      "type": "string"
+    },
+    "insta": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "share": {
+      "type": "string"
+    },
+    "news_article": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::news-article.news-article",
+      "inversedBy": "news_article_authors"
+    }
+  }
+}
