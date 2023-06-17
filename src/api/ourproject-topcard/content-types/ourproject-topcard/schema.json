@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ourproject-topcard",
     "pluralName": "ourproject-topcards",
-    "displayName": "Ourproject-topcard"
+    "displayName": "Ourproject-topcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,30 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "ourproject": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::ourproject.ourproject",
       "inversedBy": "ourproject_topcards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }
