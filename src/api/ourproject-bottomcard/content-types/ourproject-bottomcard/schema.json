@@ -34,6 +34,11 @@
       "relation": "manyToOne",
       "target": "api::ourproject.ourproject",
       "inversedBy": "ourproject_bottomcards"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

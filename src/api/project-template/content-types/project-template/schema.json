@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project-template",
     "pluralName": "project-templates",
-    "displayName": "ProjectTemplate"
+    "displayName": "ProjectTemplate",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,15 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "desc1": {
       "type": "string"
@@ -34,14 +36,15 @@
       "type": "text"
     },
     "image_crousal": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "title_messagebox": {
       "type": "string"
@@ -63,6 +66,11 @@
       "relation": "oneToMany",
       "target": "api::project-template-bluecardlast.project-template-bluecardlast",
       "mappedBy": "project_template"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

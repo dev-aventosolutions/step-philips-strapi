@@ -43,6 +43,11 @@
     },
     "btnColor": {
       "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

@@ -1,9 +1,27 @@
-'use strict';
+"use strict";
 
 /**
- * project-template controller
+ * about-us-new-article controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::project-template.project-template');
+module.exports = createCoreController(
+  "api::project-template.project-template",
+  ({ strapi }) => ({
+    async findOne(ctx) {
+      const { id } = ctx.params;
+      const entity = await strapi.db
+        .query("api::project-template.project-template")
+        .findOne({
+          where: { slug: id },
+        });
+
+      if (!entity) {
+        return ctx.notFound();
+      }
+
+      return entity;
+    },
+  })
+);
