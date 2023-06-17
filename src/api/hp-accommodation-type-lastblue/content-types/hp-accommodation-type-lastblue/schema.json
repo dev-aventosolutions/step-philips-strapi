@@ -4,7 +4,8 @@
   "info": {
     "singularName": "hp-accommodation-type-lastblue",
     "pluralName": "hp-accommodation-type-lastblues",
-    "displayName": "HPAccommodationType-lastblue"
+    "displayName": "HPAccommodationType-lastblue",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,30 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "hp_accommodation_type": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::hp-accommodation-type.hp-accommodation-type",
       "inversedBy": "hp_accommodation_type_lastblues"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }
