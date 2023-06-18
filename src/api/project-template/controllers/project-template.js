@@ -15,6 +15,7 @@ module.exports = createCoreController(
         .query("api::project-template.project-template")
         .findOne({
           where: { slug: id },
+          populate: true,
         });
 
       if (!entity) {

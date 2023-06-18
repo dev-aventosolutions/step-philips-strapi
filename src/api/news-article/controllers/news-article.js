@@ -15,6 +15,7 @@ module.exports = createCoreController(
         .query("api::news-article.news-article")
         .findOne({
           where: { slug: id },
+          populate: true,
         });
 
       if (!entity) {
