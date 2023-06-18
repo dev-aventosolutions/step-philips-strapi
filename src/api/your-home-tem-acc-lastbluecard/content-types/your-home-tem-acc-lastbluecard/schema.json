@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_tem_acc_lastbluecards",
+  "info": {
+    "singularName": "your-home-tem-acc-lastbluecard",
+    "pluralName": "your-home-tem-acc-lastbluecards",
+    "displayName": "YourHomeTemAcc-lastbluecard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
+    },
+    "your_home_tem_acc": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-tem-acc.your-home-tem-acc",
+      "inversedBy": "your_home_tem_acc_lastbluecards"
+    }
+  }
+}

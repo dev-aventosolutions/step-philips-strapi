@@ -88,6 +88,12 @@
       "relation": "oneToOne",
       "target": "api::your-home-tem-acc-bottomcard.your-home-tem-acc-bottomcard",
       "mappedBy": "your_home_tem_acc"
+    },
+    "your_home_tem_acc_lastbluecards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-tem-acc-lastbluecard.your-home-tem-acc-lastbluecard",
+      "mappedBy": "your_home_tem_acc"
     }
   }
 }

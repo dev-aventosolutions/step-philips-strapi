@@ -76,6 +76,11 @@
       "relation": "oneToMany",
       "target": "api::news-article-author.news-article-author",
       "mappedBy": "news_article"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

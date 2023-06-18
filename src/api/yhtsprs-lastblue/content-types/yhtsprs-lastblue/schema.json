@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yhtsprs_lastblues",
+  "info": {
+    "singularName": "yhtsprs-lastblue",
+    "pluralName": "yhtsprs-lastblues",
+    "displayName": "YHTSPRS-lastblue"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
+    },
+    "yh_tenant_services_pr": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
+      "inversedBy": "yhtsprs_lastblues"
+    }
+  }
+}

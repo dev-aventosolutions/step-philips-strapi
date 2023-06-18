@@ -29,11 +29,6 @@
       "relation": "oneToMany",
       "target": "api::about-us-new-tag.about-us-new-tag",
       "mappedBy": "about_us_new"
-    },
-    "slug": {
-      "type": "string",
-      "unique": true,
-      "required": true
     }
   }
 }
