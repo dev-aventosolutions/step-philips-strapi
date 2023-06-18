@@ -4,7 +4,8 @@
   "info": {
     "singularName": "whereweoperate-lastblue",
     "pluralName": "whereweoperate-lastblues",
-    "displayName": "Whereweoperate-lastblue"
+    "displayName": "Whereweoperate-lastblue",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,30 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "whereweoperate": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::whereweoperate.whereweoperate",
       "inversedBy": "whereweoperate_lastblues"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }
