@@ -40,6 +40,9 @@
     },
     "btnUrl": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
