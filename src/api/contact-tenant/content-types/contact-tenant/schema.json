@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_tenants",
+  "info": {
+    "singularName": "contact-tenant",
+    "pluralName": "contact-tenants",
+    "displayName": "ContactTenant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "contact_tenant_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-tenant-card.contact-tenant-card",
+      "mappedBy": "contact_tenant"
+    }
+  }
+}

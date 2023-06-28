@@ -26,6 +26,9 @@
       "relation": "oneToMany",
       "target": "api::contact-faq-report-point.contact-faq-report-point",
       "mappedBy": "contact_faq_report_title"
+    },
+    "btnId": {
+      "type": "string"
     }
   }
 }

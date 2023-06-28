@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "yh_tenant_feedbacks",
+  "info": {
+    "singularName": "yh-tenant-feedback",
+    "pluralName": "yh-tenant-feedbacks",
+    "displayName": "YHTenantFeedback"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

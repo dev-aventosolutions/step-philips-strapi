@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-faq-report-point",
     "pluralName": "contact-faq-report-points",
-    "displayName": "ContactFAQ-reportPoint"
+    "displayName": "ContactFAQ-reportPoint",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,9 @@
       "relation": "manyToOne",
       "target": "api::contact-faq-report-title.contact-faq-report-title",
       "inversedBy": "contact_faq_report_points"
+    },
+    "btnId": {
+      "type": "string"
     }
   }
 }

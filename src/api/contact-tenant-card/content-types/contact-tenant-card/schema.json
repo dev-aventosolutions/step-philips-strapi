@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "contact_faq_btns",
+  "collectionName": "contact_tenant_cards",
   "info": {
-    "singularName": "contact-faq-btn",
-    "pluralName": "contact-faq-btns",
-    "displayName": "ContactFAQ-btn"
+    "singularName": "contact-tenant-card",
+    "pluralName": "contact-tenant-cards",
+    "displayName": "ContactTenant-card"
   },
   "options": {
     "draftAndPublish": true
@@ -22,16 +22,16 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": true
     },
-    "btnId": {
+    "url": {
       "type": "string"
     },
-    "contact_faq": {
+    "contact_tenant": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::contact-faq.contact-faq",
-      "inversedBy": "contact_faq_btns"
+      "target": "api::contact-tenant.contact-tenant",
+      "inversedBy": "contact_tenant_cards"
     }
   }
 }
