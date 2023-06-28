@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "your_home_tem_acc_reasons",
+  "info": {
+    "singularName": "your-home-tem-acc-reason",
+    "pluralName": "your-home-tem-acc-reasons",
+    "displayName": "YourHomeTemAcc-reason"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home_tem_acc": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::your-home-tem-acc.your-home-tem-acc",
+      "inversedBy": "your_home_tem_acc_reasons"
+    }
+  }
+}

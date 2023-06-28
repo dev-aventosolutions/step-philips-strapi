@@ -94,6 +94,18 @@
       "relation": "oneToMany",
       "target": "api::your-home-tem-acc-lastbluecard.your-home-tem-acc-lastbluecard",
       "mappedBy": "your_home_tem_acc"
+    },
+    "your_home_tem_acc_reasons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-tem-acc-reason.your-home-tem-acc-reason",
+      "mappedBy": "your_home_tem_acc"
+    },
+    "your_home_tem_acc_newcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::your-home-tem-acc-newcard.your-home-tem-acc-newcard",
+      "mappedBy": "your_home_tem_acc"
     }
   }
 }
