@@ -4,7 +4,8 @@
   "info": {
     "singularName": "yhtsprs-lastcard",
     "pluralName": "yhtsprs-lastcards",
-    "displayName": "YHTSPRS-lastcard"
+    "displayName": "YHTSPRS-lastcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "title": {
       "type": "string"
@@ -32,6 +34,15 @@
       "relation": "manyToOne",
       "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
       "inversedBy": "yhtsprs_lastcards"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }
