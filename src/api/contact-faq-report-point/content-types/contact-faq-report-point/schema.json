@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_faq_report_points",
+  "info": {
+    "singularName": "contact-faq-report-point",
+    "pluralName": "contact-faq-report-points",
+    "displayName": "ContactFAQ-reportPoint"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "contact_faq_report_title": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-faq-report-title.contact-faq-report-title",
+      "inversedBy": "contact_faq_report_points"
+    }
+  }
+}
