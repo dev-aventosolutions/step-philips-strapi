@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-tenant-card",
     "pluralName": "contact-tenant-cards",
-    "displayName": "ContactTenant-card"
+    "displayName": "ContactTenant-card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,15 @@
       "type": "string"
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "url": {
       "type": "string"
