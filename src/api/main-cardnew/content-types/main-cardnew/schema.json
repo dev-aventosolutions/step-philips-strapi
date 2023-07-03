@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_cardnews",
+  "info": {
+    "singularName": "main-cardnew",
+    "pluralName": "main-cardnews",
+    "displayName": "Main-cardnew"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
+    },
+    "main": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::main.main",
+      "inversedBy": "main_cardnews"
+    }
+  }
+}
