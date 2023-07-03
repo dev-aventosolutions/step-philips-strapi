@@ -4,7 +4,8 @@
   "info": {
     "singularName": "main-cardnew",
     "pluralName": "main-cardnews",
-    "displayName": "Main-cardnew"
+    "displayName": "YHTSPRS-cardnew",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "btnTitle": {
       "type": "string"
@@ -36,11 +38,11 @@
     "btnColor": {
       "type": "string"
     },
-    "main": {
+    "yh_tenant_services_pr": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::main.main",
-      "inversedBy": "main_cardnews"
+      "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
+      "inversedBy": "yhtsprs_cardnews"
     }
   }
 }

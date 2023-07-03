@@ -66,12 +66,6 @@
       "relation": "oneToMany",
       "target": "api::main-lastcard.main-lastcard",
       "mappedBy": "main"
-    },
-    "main_cardnews": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::main-cardnew.main-cardnew",
-      "mappedBy": "main"
     }
   }
 }
