@@ -73,12 +73,6 @@
       "target": "api::yhtsprs-lastcard.yhtsprs-lastcard",
       "mappedBy": "yh_tenant_services_pr"
     },
-    "yhtsprs_bottomcard": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::yhtsprs-bottomcard.yhtsprs-bottomcard",
-      "mappedBy": "yh_tenant_services_pr"
-    },
     "yhtsprs_lastblues": {
       "type": "relation",
       "relation": "oneToMany",
@@ -89,6 +83,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::main-cardnew.main-cardnew",
+      "mappedBy": "yh_tenant_services_pr"
+    },
+    "yhtsprs_bottomcards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::yhtsprs-bottomcard.yhtsprs-bottomcard",
       "mappedBy": "yh_tenant_services_pr"
     }
   }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "yhtsprs-bottomcard",
     "pluralName": "yhtsprs-bottomcards",
-    "displayName": "YHTSPRS-bottomcard"
+    "displayName": "YHTSPRS-bottomcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "btnTitle": {
       "type": "string"
@@ -38,9 +40,9 @@
     },
     "yh_tenant_services_pr": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::yh-tenant-services-pr.yh-tenant-services-pr",
-      "inversedBy": "yhtsprs_bottomcard"
+      "inversedBy": "yhtsprs_bottomcards"
     }
   }
 }
