@@ -4,7 +4,8 @@
   "info": {
     "singularName": "your-home-oohe",
     "pluralName": "your-home-oohes",
-    "displayName": "YourHomeOOHE"
+    "displayName": "YourHomeOOHE",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,22 +18,36 @@
     "description": {
       "type": "string"
     },
-    "your_home_oohe_reports": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "your_home_oohe_cards": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::your-home-oohe-report.your-home-oohe-report",
+      "target": "api::your-home-oohe-card.your-home-oohe-card",
       "mappedBy": "your_home_oohe"
     },
-    "your_home_oohe_redcards": {
+    "your_home_oohe_questions": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::your-home-oohe-redcard.your-home-oohe-redcard",
-      "mappedBy": "your_home_oohe"
-    },
-    "your_home_oohe_emergencies": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::your-home-oohe-emergency.your-home-oohe-emergency",
+      "target": "api::your-home-oohe-question.your-home-oohe-question",
       "mappedBy": "your_home_oohe"
     }
   }

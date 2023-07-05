@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "your_home_oohe_emergencies",
+  "collectionName": "your_home_oohe_cards",
   "info": {
-    "singularName": "your-home-oohe-emergency",
-    "pluralName": "your-home-oohe-emergencies",
-    "displayName": "YourHomeOOHE-emergency"
+    "singularName": "your-home-oohe-card",
+    "pluralName": "your-home-oohe-cards",
+    "displayName": "YourHomeOOHE-card"
   },
   "options": {
     "draftAndPublish": true
@@ -15,12 +15,28 @@
       "type": "string"
     },
     "description": {
+      "type": "text"
+    },
+    "btnTitle": {
       "type": "string"
     },
-    "number": {
+    "btnUrl": {
       "type": "string"
     },
-    "icon": {
+    "btnColor": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "imageoutline": {
       "allowedTypes": [
         "images",
         "files",
@@ -34,7 +50,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::your-home-oohe.your-home-oohe",
-      "inversedBy": "your_home_oohe_emergencies"
+      "inversedBy": "your_home_oohe_cards"
     }
   }
 }
