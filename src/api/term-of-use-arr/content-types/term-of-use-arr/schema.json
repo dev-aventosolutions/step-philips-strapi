@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "term_of_use_arrs",
+  "info": {
+    "singularName": "term-of-use-arr",
+    "pluralName": "term-of-use-arrs",
+    "displayName": "TermOfUse-arr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "term_of_use": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::term-of-use.term-of-use",
+      "inversedBy": "term_of_use_arrs"
+    }
+  }
+}

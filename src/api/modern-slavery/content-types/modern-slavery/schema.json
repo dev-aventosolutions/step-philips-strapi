@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modern_slaveries",
+  "info": {
+    "singularName": "modern-slavery",
+    "pluralName": "modern-slaveries",
+    "displayName": "ModernSlavery"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "modern_slavery_arrs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::modern-slavery-arr.modern-slavery-arr",
+      "mappedBy": "modern_slavery"
+    }
+  }
+}

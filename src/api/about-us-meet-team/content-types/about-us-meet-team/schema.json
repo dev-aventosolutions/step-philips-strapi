@@ -59,6 +59,12 @@
       "relation": "oneToMany",
       "target": "api::about-us-meet-team-message3.about-us-meet-team-message3",
       "mappedBy": "about_us_meet_team"
+    },
+    "about_us_meet_team_ourteams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-meet-team-ourteam.about-us-meet-team-ourteam",
+      "mappedBy": "about_us_meet_team"
     }
   }
 }

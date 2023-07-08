@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equal_pay_arrs",
+  "info": {
+    "singularName": "equal-pay-arr",
+    "pluralName": "equal-pay-arrs",
+    "displayName": "EqualPay-arr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "equal_pay": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::equal-pay.equal-pay",
+      "inversedBy": "equal_pay_arrs"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modern_slavery_arrs",
+  "info": {
+    "singularName": "modern-slavery-arr",
+    "pluralName": "modern-slavery-arrs",
+    "displayName": "ModernSlavery-arr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "modern_slavery": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::modern-slavery.modern-slavery",
+      "inversedBy": "modern_slavery_arrs"
+    }
+  }
+}

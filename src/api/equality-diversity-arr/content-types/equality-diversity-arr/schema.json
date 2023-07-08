@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equality_diversity_arrs",
+  "info": {
+    "singularName": "equality-diversity-arr",
+    "pluralName": "equality-diversity-arrs",
+    "displayName": "EqualityDiversity-arr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "equality_diversity": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::equality-diversity.equality-diversity",
+      "inversedBy": "equality_diversity_arrs"
+    }
+  }
+}
