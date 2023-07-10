@@ -37,7 +37,8 @@ ContactComunity : /api/contact-comunities?populate=deep,3
 ContactHousingPartner : /api/c-housing-partners?populate=deep,3
 ContactInvestor : /api/contact-investors?populate=deep,3
 ContactMedia : /api/contact-medias?populate=deep,3
-ContactGenerals : /api/contact-generals?populate=deep,3
+ContactGenerals : /api/contact-generals?populate=deep,3 
+x
 ContactLettingViolations : /api/c-letting-violations?populate=deep,3
 ContactFormsubmitted : /api/form-submissions?populate=deep,3
 Downloads : /api/downloads?populate=deep,3
