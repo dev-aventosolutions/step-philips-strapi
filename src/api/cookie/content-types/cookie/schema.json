@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cookies",
+  "info": {
+    "singularName": "cookie",
+    "pluralName": "cookies",
+    "displayName": "Cookie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "cookie_arrs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cookie-arr.cookie-arr",
+      "mappedBy": "cookie"
+    }
+  }
+}

@@ -12,11 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "heading": {
       "type": "string"
     },
-    "description": {
+    "intro": {
       "type": "text"
+    },
+    "privacy_policy_arrs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::privacy-policy-arr.privacy-policy-arr",
+      "mappedBy": "privacy_policy"
     }
   }
 }

@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_faq_allreports",
+  "info": {
+    "singularName": "contact-faq-allreport",
+    "pluralName": "contact-faq-allreports",
+    "displayName": "ContactFAQ-allreport"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contact_faq": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-faq.contact-faq",
+      "inversedBy": "contact_faq_allreports"
+    },
+    "contact_faq_to_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-faq-to-report.contact-faq-to-report",
+      "mappedBy": "contact_faq_allreport"
+    },
+    "contact_faq_to_report_2s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-faq-to-report2.contact-faq-to-report2",
+      "mappedBy": "contact_faq_allreport"
+    },
+    "contact_faq_to_report_3s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-faq-to-report3.contact-faq-to-report3",
+      "mappedBy": "contact_faq_allreport"
+    },
+    "contact_faq_to_report_4s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-faq-to-report4.contact-faq-to-report4",
+      "mappedBy": "contact_faq_allreport"
+    },
+    "contact_faq_to_report_5s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-faq-to-report5.contact-faq-to-report5",
+      "mappedBy": "contact_faq_allreport"
+    },
+    "contact_faq_to_report_6s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-faq-to-report6.contact-faq-to-report6",
+      "mappedBy": "contact_faq_allreport"
+    },
+    "contact_faq_to_report_7s": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-faq-to-report7.contact-faq-to-report7",
+      "mappedBy": "contact_faq_allreport"
+    }
+  }
+}

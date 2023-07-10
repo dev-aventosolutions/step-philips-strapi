@@ -4,7 +4,8 @@
   "info": {
     "singularName": "contact-faq-to-report7",
     "pluralName": "contact-faq-to-report7s",
-    "displayName": "ContactFAQ-to-report7"
+    "displayName": "ContactFAQ-to-report7",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,10 +18,10 @@
     "description": {
       "type": "text"
     },
-    "contact_faq": {
+    "contact_faq_allreport": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::contact-faq.contact-faq",
+      "target": "api::contact-faq-allreport.contact-faq-allreport",
       "inversedBy": "contact_faq_to_report_7s"
     }
   }
