@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ourproject-2",
     "pluralName": "ourproject-2s",
-    "displayName": "Ourproject-2"
+    "displayName": "Ourproject-2",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,19 +18,6 @@
     "description": {
       "type": "text"
     },
-    "slug": {
-      "type": "string"
-    },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "btnTitle": {
       "type": "string"
     },
@@ -37,6 +25,21 @@
       "type": "string"
     },
     "btnColor": {
+      "type": "string"
+    },
+    "ourproject_2_arrs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ourproject-2-arr.ourproject-2-arr",
+      "mappedBy": "ourproject_2"
+    },
+    "CntrbtnTitle": {
+      "type": "string"
+    },
+    "CntrbtnUrl": {
+      "type": "string"
+    },
+    "CntrbtnColor": {
       "type": "string"
     }
   }

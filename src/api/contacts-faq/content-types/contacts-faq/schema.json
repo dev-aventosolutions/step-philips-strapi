@@ -34,6 +34,9 @@
     },
     "url": {
       "type": "string"
+    },
+    "btnId": {
+      "type": "string"
     }
   }
 }

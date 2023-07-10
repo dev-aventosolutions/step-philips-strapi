@@ -54,6 +54,15 @@
     },
     "videoUrl": {
       "type": "string"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
     }
   }
 }

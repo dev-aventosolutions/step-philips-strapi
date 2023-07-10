@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ourproject_3_arrs",
+  "info": {
+    "singularName": "ourproject-3-arr",
+    "pluralName": "ourproject-3-arrs",
+    "displayName": "Ourproject-3-arr"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "btnTitle": {
+      "type": "string"
+    },
+    "btnUrl": {
+      "type": "string"
+    },
+    "btnColor": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ourproject_3": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ourproject-3.ourproject-3",
+      "inversedBy": "ourproject_3_arrs"
+    }
+  }
+}
