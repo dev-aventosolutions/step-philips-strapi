@@ -90,6 +90,18 @@
       "relation": "oneToMany",
       "target": "api::housing-partner-brochure.housing-partner-brochure",
       "mappedBy": "housing_partner"
+    },
+    "housing_partner_partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-partner.housing-partner-partner",
+      "mappedBy": "housing_partner"
+    },
+    "housing_partner_stats": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::housing-partner-stat.housing-partner-stat",
+      "mappedBy": "housing_partner"
     }
   }
 }
