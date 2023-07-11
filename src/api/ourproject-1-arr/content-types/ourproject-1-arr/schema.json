@@ -29,20 +29,14 @@
         "audios"
       ]
     },
-    "btnTitle": {
-      "type": "string"
-    },
-    "btnUrl": {
-      "type": "string"
-    },
-    "btnColor": {
-      "type": "string"
-    },
     "ourproject_1": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::ourproject-1.ourproject-1",
       "inversedBy": "ourproject_1_arrs"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

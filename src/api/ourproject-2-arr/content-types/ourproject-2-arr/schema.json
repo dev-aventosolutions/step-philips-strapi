@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ourproject-2-arr",
     "pluralName": "ourproject-2-arrs",
-    "displayName": "Ourproject-2-arr"
+    "displayName": "Ourproject-2-arr",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,24 +18,19 @@
     "description": {
       "type": "string"
     },
-    "btnTitle": {
-      "type": "string"
-    },
-    "btnUrl": {
-      "type": "string"
-    },
-    "btnColor": {
+    "slug": {
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "ourproject_2": {
       "type": "relation",
