@@ -18,7 +18,7 @@
     "description": {
       "type": "text"
     },
-    "icon": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
