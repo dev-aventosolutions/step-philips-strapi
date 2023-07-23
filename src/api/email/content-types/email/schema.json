@@ -24,15 +24,18 @@
       "type": "string",
       "required": true
     },
-    "message": {
+    "html": {
       "type": "text",
       "required": false,
       "default": "missing text..."
     },
+    "status": {
+      "type": "string",
+      "required": true,
+      "default": "failed"
+    },
     "attachment": {
-      "allowedTypes": ["images", "files", "videos", "audios"],
-      "type": "media",
-      "multiple": true
+      "type": "string"
     }
   }
 }
