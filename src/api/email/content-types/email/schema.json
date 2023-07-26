@@ -14,7 +14,8 @@
   "attributes": {
     "from": {
       "type": "email",
-      "required": true
+      "required": false,
+      "default": "safee.saqib1122@gmail.com"
     },
     "to": {
       "type": "email",

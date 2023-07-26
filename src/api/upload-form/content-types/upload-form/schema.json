@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upload_forms",
+  "info": {
+    "singularName": "upload-form",
+    "pluralName": "upload-forms",
+    "displayName": "UploadForm"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "attachment": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
