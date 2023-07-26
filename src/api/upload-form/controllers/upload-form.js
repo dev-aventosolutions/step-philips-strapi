@@ -21,19 +21,27 @@ module.exports = createCoreController(
         const s3BucketName = "stefphilips-forms";
         const s3 = new AWS.S3();
 
-        const params = {
-          Bucket: s3BucketName,
-          Key: `forms/${ctx.request.body.form}/${ctx.request.files.attachment.name}`, // Optional folder path
-          Body: fs.createReadStream(ctx.request.files.attachment.path),
-          ACL: "public-read", // Change the ACL permission if required
-        };
-        // Upload file to S3
-        const result = await s3.upload(params).promise();
-        console.log("body>>>>>>>>>...", result);
-        return { url: result.Location };
+        const formName = ctx.request.body.form;
+        const uploadedFiles = [];
+        // Loop through each file in ctx.request.files
+        for (const fileKey in ctx.request.files) {
+          const file = ctx.request.files[fileKey];
+          const params = {
+            Bucket: s3BucketName,
+            Key: `forms/${formName}/${file.name}`, // Optional folder path
+            Body: fs.createReadStream(file.path),
+            ACL: "public-read", // Change the ACL permission if required
+          };
+          // Upload file to S3
+          const result = await s3.upload(params).promise();
+          uploadedFiles.push(result.Location);
+        }
+
+        console.log("Uploaded files:", uploadedFiles);
+        return { urls: uploadedFiles };
       } catch (err) {
         console.log(err);
-        return "Email not  sent successfully!";
+        return "upload not successfully!";
       }
     },
   })
