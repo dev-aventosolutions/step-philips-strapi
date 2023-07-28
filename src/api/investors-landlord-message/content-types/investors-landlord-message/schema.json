@@ -4,14 +4,15 @@
   "info": {
     "singularName": "investors-landlord-message",
     "pluralName": "investors-landlord-messages",
-    "displayName": "InvestorsLandlord-message"
+    "displayName": "InvestorsLandlord-message",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "message": {
+    "description": {
       "type": "text"
     },
     "title": {
@@ -25,6 +26,17 @@
       "relation": "oneToOne",
       "target": "api::investors-landlord.investors-landlord",
       "inversedBy": "investors_landlord_message"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
