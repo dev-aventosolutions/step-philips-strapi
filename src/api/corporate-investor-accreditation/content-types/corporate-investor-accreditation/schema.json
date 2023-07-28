@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "corporate_investor_accreditations",
+  "info": {
+    "singularName": "corporate-investor-accreditation",
+    "pluralName": "corporate-investor-accreditations",
+    "displayName": "CorporateInvestor-accreditation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "corporate_investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::corporate-investor.corporate-investor",
+      "inversedBy": "corporate_investor_accreditations"
+    }
+  }
+}

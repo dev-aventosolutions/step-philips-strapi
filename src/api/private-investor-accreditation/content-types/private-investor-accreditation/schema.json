@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "private_investor_accreditations",
+  "info": {
+    "singularName": "private-investor-accreditation",
+    "pluralName": "private-investor-accreditations",
+    "displayName": "PrivateInvestor-accreditation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "private_invester": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::private-invester.private-invester",
+      "inversedBy": "private_investor_accreditations"
+    }
+  }
+}

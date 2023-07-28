@@ -4,7 +4,8 @@
   "info": {
     "singularName": "corporate-investor-message",
     "pluralName": "corporate-investor-messages",
-    "displayName": "CorporateInvestor-message"
+    "displayName": "CorporateInvestor-message",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,16 @@
       "relation": "manyToOne",
       "target": "api::corporate-investor.corporate-investor",
       "inversedBy": "corporate_investor_messages"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

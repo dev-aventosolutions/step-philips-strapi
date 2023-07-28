@@ -96,6 +96,12 @@
       "relation": "oneToMany",
       "target": "api::corporate-investor-brochure.corporate-investor-brochure",
       "mappedBy": "corporate_investor"
+    },
+    "corporate_investor_accreditations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::corporate-investor-accreditation.corporate-investor-accreditation",
+      "mappedBy": "corporate_investor"
     }
   }
 }

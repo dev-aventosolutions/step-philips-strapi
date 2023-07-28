@@ -4,7 +4,8 @@
   "info": {
     "singularName": "private-invester-message",
     "pluralName": "private-invester-messages",
-    "displayName": "PrivateInvester-message"
+    "displayName": "PrivateInvester-message",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,7 +18,7 @@
     "name": {
       "type": "string"
     },
-    "message": {
+    "description": {
       "type": "text"
     },
     "private_invester": {
@@ -25,6 +26,16 @@
       "relation": "manyToOne",
       "target": "api::private-invester.private-invester",
       "inversedBy": "private_invester_messages"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
