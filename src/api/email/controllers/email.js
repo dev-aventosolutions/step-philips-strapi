@@ -3,7 +3,6 @@
 /**
  * email controller
  */
-const AWS = require("aws-sdk");
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
@@ -53,7 +52,7 @@ module.exports = createCoreController("api::email.email", ({ strapi }) => ({
           status: "failed",
         },
       });
-      return "Email not  sent successfully!";
+      return "Email not sent successfully!";
     }
   },
 }));
