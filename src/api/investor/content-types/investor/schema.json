@@ -85,10 +85,16 @@
       "target": "api::investor-call.investor-call",
       "mappedBy": "investor"
     },
-    "investor_accreditations": {
+    "investor_partners": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::investor-accreditation.investor-accreditation",
+      "target": "api::investor-partner.investor-partner",
+      "mappedBy": "investor"
+    },
+    "investor_faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::investor-faq.investor-faq",
       "mappedBy": "investor"
     }
   }

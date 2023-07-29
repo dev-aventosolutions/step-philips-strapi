@@ -97,10 +97,10 @@
       "target": "api::corporate-investor-brochure.corporate-investor-brochure",
       "mappedBy": "corporate_investor"
     },
-    "corporate_investor_accreditations": {
+    "corporate_partners": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::corporate-investor-accreditation.corporate-investor-accreditation",
+      "target": "api::corporate-partner.corporate-partner",
       "mappedBy": "corporate_investor"
     }
   }

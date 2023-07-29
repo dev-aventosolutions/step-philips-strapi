@@ -103,10 +103,10 @@
       "target": "api::private-invester-call.private-invester-call",
       "mappedBy": "private_invester"
     },
-    "private_investor_accreditations": {
+    "private_investor_partners": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::private-investor-accreditation.private-investor-accreditation",
+      "target": "api::private-investor-partner.private-investor-partner",
       "mappedBy": "private_invester"
     }
   }

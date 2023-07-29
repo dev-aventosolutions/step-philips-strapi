@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investor_faqs",
+  "info": {
+    "singularName": "investor-faq",
+    "pluralName": "investor-faqs",
+    "displayName": "Investor-faq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "investor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::investor.investor",
+      "inversedBy": "investor_faqs"
+    }
+  }
+}
