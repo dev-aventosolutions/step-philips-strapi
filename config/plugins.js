@@ -30,16 +30,16 @@ module.exports = ({ env }) => ({
     config: {
       provider: "nodemailer",
       providerOptions: {
-        host: env("SMTP_HOST", "smtp.gmail.com"),
+        host: env("SMTP_HOST", "smtp-mail.outlook.com"),
         port: env("SMTP_PORT", 587),
         auth: {
-          user: env("SMTP_USERNAME", "safee.saqib1122@gmail.com"),
-          pass: env("SMTP_PASSWORD", "qrtgcieextfgvcta"),
+          user: env("SMTP_USERNAME", "webinquiry@stefphilips.com"),
+          pass: env("SMTP_PASSWORD", "Manifestation@159"),
         },
         // ... any custom nodemailer options
       },
       settings: {
-        defaultFrom: '"Stef&Philips" <safee.saqib1122@gmail.com>',
+        defaultFrom: '"Stef&Philips" <webinquiry@stefphilips.com>',
       },
     },
   },
