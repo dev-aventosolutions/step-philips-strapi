@@ -10,22 +10,23 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "btn_url": {
+    "btn_Url": {
       "type": "string"
     },
-    "btn_title": {
+    "btn_Title": {
       "type": "string"
     },
-    "btn_color": {
+    "btn_Color": {
       "type": "string"
     }
   }
