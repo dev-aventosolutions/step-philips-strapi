@@ -24,10 +24,21 @@
       "repeatable": true,
       "component": "about-us.about-us-meet-team-team-opt"
     },
-    "ourteam": {
+    "our_senior_team": {
       "type": "component",
       "repeatable": true,
       "component": "about-us.about-us-meet-team-team-opt"
+    },
+    "ceo_card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.team-message"
+    },
+    "community_card": {
+      "displayName": "community_card",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.community-card"
     }
   }
 }

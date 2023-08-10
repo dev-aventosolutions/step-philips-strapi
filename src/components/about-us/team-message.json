@@ -1,27 +1,28 @@
 {
-  "collectionName": "components_about_us_about_us_meet_team_team_opts",
+  "collectionName": "components_about_us_team_messages",
   "info": {
-    "displayName": "Team",
-    "description": ""
+    "displayName": "team_message"
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string"
     },
-    "designation": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
       "type": "string"
     },
     "image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
