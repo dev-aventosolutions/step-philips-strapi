@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_opts",
+  "info": {
+    "singularName": "about-us-opt",
+    "pluralName": "about-us-opts",
+    "displayName": "AboutUsOpt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoUrl": {
+      "type": "string"
+    },
+    "about_us_card_opts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-card-opt.about-us-card-opt",
+      "mappedBy": "about_us_opt"
+    },
+    "about_us_value_opts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-value-opt.about-us-value-opt",
+      "mappedBy": "about_us_opt"
+    },
+    "about_us_message_opts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-message-opt.about-us-message-opt",
+      "mappedBy": "about_us_opt"
+    },
+    "about_us_team_opts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::about-us-team-opt.about-us-team-opt",
+      "mappedBy": "about_us_opt"
+    }
+  }
+}

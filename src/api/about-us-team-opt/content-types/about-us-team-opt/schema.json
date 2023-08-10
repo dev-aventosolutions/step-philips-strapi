@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_team_opts",
+  "info": {
+    "singularName": "about-us-team-opt",
+    "pluralName": "about-us-team-opts",
+    "displayName": "AboutUsTeamOpt"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "about_us_opt": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about-us-opt.about-us-opt",
+      "inversedBy": "about_us_team_opts"
+    }
+  }
+}

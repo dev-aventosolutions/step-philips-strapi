@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_meet_team_opts",
+  "info": {
+    "singularName": "about-us-meet-team-opt",
+    "pluralName": "about-us-meet-team-opts",
+    "displayName": "AboutUsMeetTeamOpt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "team": {
+      "displayName": "AboutUsMeetTeamTeamOpt",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.about-us-meet-team-team-opt"
+    },
+    "ourteam": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.about-us-meet-team-team-opt"
+    }
+  }
+}

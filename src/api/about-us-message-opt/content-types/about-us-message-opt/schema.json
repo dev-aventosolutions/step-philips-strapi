@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_us_message_opts",
+  "info": {
+    "singularName": "about-us-message-opt",
+    "pluralName": "about-us-message-opts",
+    "displayName": "AboutUsMessageOpt"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "about_us_opt": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about-us-opt.about-us-opt",
+      "inversedBy": "about_us_message_opts"
+    }
+  }
+}

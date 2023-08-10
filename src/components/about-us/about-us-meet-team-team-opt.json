@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_about_us_about_us_meet_team_team_opts",
+  "info": {
+    "displayName": "AboutUsMeetTeamTeamOpt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
