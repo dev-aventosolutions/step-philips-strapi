@@ -1,20 +1,11 @@
 {
-  "collectionName": "components_about_us_team_messages",
+  "collectionName": "components_common_icon_cards",
   "info": {
-    "displayName": "Ceo_message",
+    "displayName": "IconCard",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -25,6 +16,12 @@
         "videos",
         "audios"
       ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

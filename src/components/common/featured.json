@@ -1,14 +1,11 @@
 {
-  "collectionName": "components_about_us_team_messages",
+  "collectionName": "components_common_featureds",
   "info": {
-    "displayName": "Ceo_message",
+    "displayName": "Featured",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },
@@ -25,6 +22,11 @@
         "videos",
         "audios"
       ]
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
     }
   }
 }

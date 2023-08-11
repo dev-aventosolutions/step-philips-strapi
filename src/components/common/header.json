@@ -1,14 +1,10 @@
 {
-  "collectionName": "components_about_us_team_messages",
+  "collectionName": "components_common_headers",
   "info": {
-    "displayName": "Ceo_message",
-    "description": ""
+    "displayName": "Header"
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },
@@ -16,15 +12,14 @@
       "type": "text"
     },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

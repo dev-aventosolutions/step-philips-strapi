@@ -15,29 +15,40 @@
     "videoUrl": {
       "type": "string"
     },
-    "about_us_card_opts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::about-us-card-opt.about-us-card-opt",
-      "mappedBy": "about_us_opt"
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.header"
     },
-    "about_us_value_opts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::about-us-value-opt.about-us-value-opt",
-      "mappedBy": "about_us_opt"
+    "featured": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.featured"
     },
-    "about_us_message_opts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::about-us-message-opt.about-us-message-opt",
-      "mappedBy": "about_us_opt"
+    "value_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.icon-card"
     },
-    "about_us_team_opts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::about-us-team-opt.about-us-team-opt",
-      "mappedBy": "about_us_opt"
+    "featured_with_icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.icon-card"
+    },
+    "our_senior_team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.about-us-meet-team-team-opt"
+    },
+    "ceo_message": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.team-message"
+    },
+    "featured_with_btn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.featured"
     }
   }
 }
