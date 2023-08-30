@@ -4,7 +4,8 @@
   "info": {
     "singularName": "your-home-asb",
     "pluralName": "your-home-asbs",
-    "displayName": "YourHomeASB"
+    "displayName": "YourHomeASB",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "your_home_asb_reports": {
       "type": "relation",
