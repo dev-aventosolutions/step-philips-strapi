@@ -23,6 +23,11 @@
       "relation": "oneToMany",
       "target": "api::your-home-asb-report.your-home-asb-report",
       "mappedBy": "your_home_asb"
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.question"
     }
   }
 }
