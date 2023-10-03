@@ -44,6 +44,11 @@
       "type": "component",
       "repeatable": false,
       "component": "about-us.team-message"
+    },
+    "accredation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.accredation"
     }
   }
 }

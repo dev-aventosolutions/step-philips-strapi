@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_accredations",
+  "info": {
+    "displayName": "Accredation"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
