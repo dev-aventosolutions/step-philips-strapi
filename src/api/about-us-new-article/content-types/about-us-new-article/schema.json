@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "tag": {
-      "type": "string"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -43,19 +40,28 @@
         "audios"
       ]
     },
-    "messageboxname": {
-      "type": "string"
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.tag"
     },
-    "messageboxtext": {
-      "type": "text"
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.paragraph"
     },
-    "messageboxtitle": {
-      "type": "string"
+    "article_author": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.article-author"
     },
-    "slug": {
-      "type": "string",
-      "unique": true,
-      "required": true
+    "date": {
+      "type": "date"
+    },
+    "quote": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about-us.quote"
     }
   }
 }
