@@ -29,17 +29,6 @@
     "description": {
       "type": "text"
     },
-    "video": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "tags": {
       "type": "component",
       "repeatable": true,
@@ -62,6 +51,14 @@
       "type": "component",
       "repeatable": false,
       "component": "about-us.quote"
+    },
+    "article_social_links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-us.social-icons"
+    },
+    "video": {
+      "type": "text"
     }
   }
 }

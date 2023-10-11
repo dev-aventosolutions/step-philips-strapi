@@ -1,19 +1,16 @@
 {
   "collectionName": "components_about_us_social_icons",
   "info": {
-    "displayName": "Social_icons"
+    "displayName": "Social_icons",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "icon": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "url": {
       "type": "text"
+    },
+    "socia_media": {
+      "type": "string"
     }
   }
 }
