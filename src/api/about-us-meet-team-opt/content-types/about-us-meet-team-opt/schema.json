@@ -39,6 +39,9 @@
       "type": "component",
       "repeatable": false,
       "component": "about-us.community-card"
+    },
+    "title_2": {
+      "type": "string"
     }
   }
 }
