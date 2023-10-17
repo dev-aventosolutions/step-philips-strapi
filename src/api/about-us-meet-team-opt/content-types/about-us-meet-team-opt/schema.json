@@ -40,7 +40,7 @@
       "repeatable": false,
       "component": "about-us.community-card"
     },
-    "title_2": {
+    "title2": {
       "type": "string"
     }
   }
