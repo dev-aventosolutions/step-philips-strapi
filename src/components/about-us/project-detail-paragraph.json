@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_about_us_project_detail_paragraphs",
+  "info": {
+    "displayName": "project-detail-paragraph"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}

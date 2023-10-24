@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_us_project_detail_icon_cards",
+  "info": {
+    "displayName": "project-detail-iconCard"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

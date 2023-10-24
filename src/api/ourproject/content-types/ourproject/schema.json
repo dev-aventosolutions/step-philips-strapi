@@ -40,18 +40,6 @@
         "audios"
       ]
     },
-    "ourproject_topcards": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::ourproject-topcard.ourproject-topcard",
-      "mappedBy": "ourproject"
-    },
-    "ourproject_bottomcards": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::ourproject-bottomcard.ourproject-bottomcard",
-      "mappedBy": "ourproject"
-    },
     "videoUrl": {
       "type": "string"
     },
