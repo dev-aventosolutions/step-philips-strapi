@@ -4,7 +4,8 @@
   "info": {
     "singularName": "our-project-listing",
     "pluralName": "our-project-listings",
-    "displayName": "Our-project-listing"
+    "displayName": "Our-project-listing",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,33 +25,15 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "carousel": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "key_stat_header": {
-      "type": "string"
-    },
-    "key_stat_listing": {
-      "displayName": "project-detail-iconCard",
-      "type": "component",
-      "repeatable": true,
-      "component": "about-us.project-detail-icon-card"
+      ]
     },
     "paragraph": {
       "displayName": "project-detail-paragraph",
@@ -60,6 +43,16 @@
     },
     "video_url": {
       "type": "string"
+    },
+    "key_stat_listing": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.icon-card"
+    },
+    "carousel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.icon-card"
     }
   }
 }
