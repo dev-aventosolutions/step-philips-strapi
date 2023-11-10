@@ -4,7 +4,8 @@
   "info": {
     "singularName": "investor",
     "pluralName": "investors",
-    "displayName": "Investor"
+    "displayName": "Investor",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,24 +19,26 @@
       "type": "string"
     },
     "image_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "investment_desc": {
       "type": "text"
@@ -96,6 +99,11 @@
       "relation": "oneToMany",
       "target": "api::investor-faq.investor-faq",
       "mappedBy": "investor"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

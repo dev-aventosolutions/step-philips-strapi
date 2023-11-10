@@ -4,7 +4,8 @@
   "info": {
     "singularName": "housing-partner-pr",
     "pluralName": "housing-partner-prs",
-    "displayName": "HousingPartnerPR"
+    "displayName": "HousingPartnerPR",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,24 +19,26 @@
       "type": "string"
     },
     "image_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "housing_partner_pr_blanckcards": {
       "type": "relation",
@@ -60,6 +63,11 @@
       "relation": "oneToMany",
       "target": "api::housing-partner-pr-bluecardlast.housing-partner-pr-bluecardlast",
       "mappedBy": "housing_partner_pr"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "private-invester",
     "pluralName": "private-investers",
-    "displayName": "PrivateInvester"
+    "displayName": "PrivateInvester",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,24 +19,26 @@
       "type": "string"
     },
     "image_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline_c1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "sourcing_desc": {
       "type": "text"
@@ -108,6 +111,11 @@
       "relation": "oneToMany",
       "target": "api::private-investor-partner.private-investor-partner",
       "mappedBy": "private_invester"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
