@@ -40,14 +40,6 @@ module.exports = createCoreController(
           const result = await s3.upload(params).promise();
           uploadedFiles.push(result.Location);
         }
-        const uploadFormEntry = await strapi.query("upload-forms").create({
-          // Assuming you have a 'files' field in your 'upload-forms' content type
-          attachment: uploadedFiles,
-          // Add other fields as needed
-          // field1: value1,
-          // field2: value2,
-        });
-        console.log("Uploaded files:", uploadFormEntry);
         return { urls: uploadedFiles };
       } catch (err) {
         console.log(err);
