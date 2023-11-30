@@ -4,7 +4,8 @@
   "info": {
     "singularName": "temporary-accom",
     "pluralName": "temporary-accoms",
-    "displayName": "TemporaryAccom"
+    "displayName": "TemporaryAccom",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,24 +19,26 @@
       "type": "string"
     },
     "image_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "imageoutline_c1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "temporary_accom_blankcards": {
       "type": "relation",
@@ -60,6 +63,11 @@
       "relation": "oneToMany",
       "target": "api::temporary-accom-bluecardlast.temporary-accom-bluecardlast",
       "mappedBy": "temporary_accom"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
