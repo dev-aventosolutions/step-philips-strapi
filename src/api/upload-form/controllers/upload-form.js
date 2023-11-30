@@ -17,7 +17,7 @@ module.exports = createCoreController(
   ({ strapi }) => ({
     async uploadForm(ctx) {
       try {
-        console.log(ctx.request.files, ctx.request.body);
+
         const s3BucketName = "stefphilips-forms";
         const s3 = new AWS.S3();
 
@@ -26,6 +26,10 @@ module.exports = createCoreController(
         // Loop through each file in ctx.request.files
         for (const fileKey in ctx.request.files) {
           const file = ctx.request.files[fileKey];
+            console.log(
+              "ctx.request-body",
+              formName,
+            );
           const params = {
             Bucket: s3BucketName,
             Key: `forms/${formName}/${file.name}`, // Optional folder path
@@ -36,8 +40,14 @@ module.exports = createCoreController(
           const result = await s3.upload(params).promise();
           uploadedFiles.push(result.Location);
         }
-
-        console.log("Uploaded files:", uploadedFiles);
+        const uploadFormEntry = await strapi.query("upload-forms").create({
+          // Assuming you have a 'files' field in your 'upload-forms' content type
+          attachment: uploadedFiles,
+          // Add other fields as needed
+          // field1: value1,
+          // field2: value2,
+        });
+        console.log("Uploaded files:", uploadFormEntry);
         return { urls: uploadedFiles };
       } catch (err) {
         console.log(err);
