@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "other_issues_forms",
+  "info": {
+    "singularName": "other-issues-form",
+    "pluralName": "other-issues-forms",
+    "displayName": "other-issues-form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "street_address": {
+      "type": "string"
+    },
+    "flat_number": {
+      "type": "string"
+    },
+    "town": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    }
+  }
+}

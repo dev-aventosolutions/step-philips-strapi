@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anti_social_behaviour_forms",
+  "info": {
+    "singularName": "anti-social-behaviour-form",
+    "pluralName": "anti-social-behaviour-forms",
+    "displayName": "anti-social-behaviour-form",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "flat_number": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "street_address": {
+      "type": "string"
+    },
+    "town": {
+      "type": "string"
+    },
+    "attachments": {
+      "displayName": "url",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.url"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "general_forms",
+  "info": {
+    "singularName": "general-form",
+    "pluralName": "general-forms",
+    "displayName": "general-form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}
