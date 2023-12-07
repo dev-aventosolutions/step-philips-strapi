@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_housing_partner_forms",
+  "info": {
+    "singularName": "contact-housing-partner-form",
+    "pluralName": "contact-housing-partner-forms",
+    "displayName": "contact-housing-partner-form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "organistation_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

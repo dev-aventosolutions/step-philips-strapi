@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_media_forms",
+  "info": {
+    "singularName": "contact-media-form",
+    "pluralName": "contact-media-forms",
+    "displayName": "contact-media-form"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "organisation_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}
