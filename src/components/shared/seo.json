@@ -48,6 +48,9 @@
     },
     "canonicalURL": {
       "type": "string"
+    },
+    "pageTitle": {
+      "type": "string"
     }
   }
 }

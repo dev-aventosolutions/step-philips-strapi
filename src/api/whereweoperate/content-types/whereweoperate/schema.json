@@ -74,6 +74,11 @@
       "relation": "oneToMany",
       "target": "api::whereweoperate-card.whereweoperate-card",
       "mappedBy": "whereweoperate"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

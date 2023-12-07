@@ -23,6 +23,11 @@
       "relation": "oneToMany",
       "target": "api::about-us-new-tag.about-us-new-tag",
       "mappedBy": "about_us_new"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
