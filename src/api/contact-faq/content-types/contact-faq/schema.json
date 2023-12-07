@@ -41,6 +41,11 @@
       "relation": "oneToMany",
       "target": "api::contact-faq-allreport.contact-faq-allreport",
       "mappedBy": "contact_faq"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
