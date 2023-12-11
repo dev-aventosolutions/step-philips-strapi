@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_button_page_points",
+  "info": {
+    "displayName": "button-page-point",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "go_to": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

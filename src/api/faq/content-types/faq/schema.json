@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "faq",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "collapse": {
+      "displayName": "collapse",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.collapse"
+    },
+    "buttons": {
+      "displayName": "button-page-point",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.button-page-point"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
