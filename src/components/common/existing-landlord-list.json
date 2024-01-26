@@ -1,24 +1,29 @@
 {
   "collectionName": "components_common_existing_landlord_lists",
   "info": {
-    "displayName": "existing-landlord-list"
+    "displayName": "existing-landlord-list",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "list": {
       "type": "component",
       "repeatable": true,
       "component": "common.list"
+    },
+    "title": {
+      "type": "text"
     }
   }
 }
