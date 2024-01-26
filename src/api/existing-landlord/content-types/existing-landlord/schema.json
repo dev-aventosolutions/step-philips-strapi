@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "existing_landlords",
+  "info": {
+    "singularName": "existing-landlord",
+    "pluralName": "existing-landlords",
+    "displayName": "existing-landlord",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.header"
+    },
+    "featured": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.featured"
+    },
+    "carousel": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.existing-landlord-carousel"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.existing-landlord-list"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

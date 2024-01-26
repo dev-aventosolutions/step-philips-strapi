@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_common_num_carousels",
+  "info": {
+    "displayName": "num-carousel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bgcolor": {
+      "type": "string"
+    }
+  }
+}

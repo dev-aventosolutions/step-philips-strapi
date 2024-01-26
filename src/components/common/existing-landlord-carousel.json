@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_existing_landlord_carousels",
+  "info": {
+    "displayName": "existing-landlord-carousel"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
+    },
+    "carousel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.num-carousel"
+    }
+  }
+}
