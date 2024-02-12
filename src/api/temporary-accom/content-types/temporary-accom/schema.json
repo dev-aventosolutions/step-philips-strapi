@@ -68,6 +68,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.testimonial"
     }
   }
 }
