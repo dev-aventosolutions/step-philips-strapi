@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_article_contents",
+  "info": {
+    "displayName": "article-content",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    }
+  }
+}
